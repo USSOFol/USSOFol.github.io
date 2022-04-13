@@ -495,7 +495,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    63
+                    126
                 </div>
                 
 
@@ -524,7 +524,10 @@
             <div id="articleContent">
                 <h2 id="1-文章地址"><a href="#1-文章地址" class="headerlink" title="1.文章地址"></a>1.文章地址</h2><p><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20</a></p>
 <h2 id="2-算法公式推导"><a href="#2-算法公式推导" class="headerlink" title="2.算法公式推导"></a>2.算法公式推导</h2><h3 id="a-传统质心定位算法"><a href="#a-传统质心定位算法" class="headerlink" title="a.传统质心定位算法"></a>a.传统质心定位算法</h3><p>$$<br>(x_c,y_c)=(\frac{\sum_iI_ix_i}{\sum_iI_i},\frac{\sum_iI_iy_i}{\sum_iI_i})<br>$$</p>
+<p>matlab代码实现：</p>
+<figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">clc;</span><br><span class="line">close all;</span><br><span class="line">clear all</span><br><span class="line">img=imread(<span class="string">'test.png'</span>);</span><br><span class="line">img=rgb2gray(img);</span><br><span class="line">img=double(img);</span><br><span class="line">c=sum(sum(img));</span><br><span class="line">[m,n]=<span class="built_in">size</span>(img);</span><br><span class="line">aa=(<span class="number">1</span>:<span class="number">1</span>:m);</span><br><span class="line">dd=aa*img;</span><br><span class="line">y_c=sum(dd)/c;</span><br><span class="line">bb=(<span class="number">1</span>:<span class="number">1</span>:n)';</span><br><span class="line">x_c=sum(img*bb)/c</span><br><span class="line"><span class="built_in">figure</span></span><br><span class="line">    set(gcf,<span class="string">'color'</span>,<span class="string">'w'</span>);</span><br><span class="line">    imshow(img,[])</span><br><span class="line">    <span class="built_in">hold</span> on</span><br><span class="line">    <span class="built_in">plot</span>(x_c,y_c,<span class="string">'*'</span>,<span class="string">'MarkerSize'</span>,<span class="number">10</span>,<span class="string">'MarkerEdgeColor'</span>,<span class="string">'r'</span>)</span><br><span class="line">  </span><br></pre></td></tr></tbody></table></figure>
 
+<h2 id="b"><a href="#b" class="headerlink" title="b."></a>b.</h2>
                 
             </div>
             <hr/>
@@ -1268,7 +1271,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">386</span>
+                        class="white-color">449</span>
             
             
             
