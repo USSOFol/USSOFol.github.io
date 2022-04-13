@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-12T14:02:54.419Z</updated>
+  <updated>2022-04-13T03:33:03.585Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基于高斯掩膜的质心定位算法</title>
+    <link href="http://example.com/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/"/>
+    <id>http://example.com/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</id>
+    <published>2022-04-12T16:00:00.000Z</published>
+    <updated>2022-04-13T03:33:03.585Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-文章地址&quot;&gt;&lt;a href=&quot;#1-文章地址&quot; class=&quot;headerlink&quot; title=&quot;1.文章地址&quot;&gt;&lt;/a&gt;1.文章地址&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="自适应光学技术" scheme="http://example.com/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="matlab" scheme="http://example.com/tags/matlab/"/>
+    
+    <category term="SHS" scheme="http://example.com/tags/SHS/"/>
+    
+    <category term="AO" scheme="http://example.com/tags/AO/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用直接波前传感获取成像的文章与代码阅读</title>
     <link href="http://example.com/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji/"/>
     <id>http://example.com/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji/</id>
     <published>2022-04-11T16:00:00.000Z</published>
-    <updated>2022-04-12T14:02:54.419Z</updated>
+    <updated>2022-04-13T03:31:50.661Z</updated>
     
     
       
