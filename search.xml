@@ -1,82 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title></title>
-      <link href="/2022/04/13/wei-ming-ming/"/>
-      <url>/2022/04/13/wei-ming-ming/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>基于高斯掩膜的质心定位算法</title>
-      <link href="/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/"/>
-      <url>/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</url>
-      
-        <content type="html"><![CDATA[<h2 id="1-文章地址"><a href="#1-文章地址" class="headerlink" title="1.文章地址"></a>1.文章地址</h2><p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20</a></p><h2 id="2-算法公式推导"><a href="#2-算法公式推导" class="headerlink" title="2.算法公式推导"></a>2.算法公式推导</h2><h3 id="a-传统质心定位算法"><a href="#a-传统质心定位算法" class="headerlink" title="a.传统质心定位算法"></a>a.传统质心定位算法</h3><p>$$</p><p>$$</p><p>$$<br>(x_c,y_c)=(\frac{\sum_iI_ix_i}{\sum_iI_i},\frac{\sum_iI_iy_i}{\sum_iI_i})<br>$$</p><p>matlab代码实现：</p><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">clc;</span><br><span class="line">close all;</span><br><span class="line">clear all</span><br><span class="line">img=imread(<span class="string">'test.png'</span>);</span><br><span class="line">img=rgb2gray(img);</span><br><span class="line">img=double(img);</span><br><span class="line">c=sum(sum(img));</span><br><span class="line">[m,n]=<span class="built_in">size</span>(img);</span><br><span class="line">aa=(<span class="number">1</span>:<span class="number">1</span>:m);</span><br><span class="line">dd=aa*img;</span><br><span class="line">y_c=sum(dd)/c;</span><br><span class="line">bb=(<span class="number">1</span>:<span class="number">1</span>:n)';</span><br><span class="line">x_c=sum(img*bb)/c</span><br><span class="line"><span class="built_in">figure</span></span><br><span class="line">    set(gcf,<span class="string">'color'</span>,<span class="string">'w'</span>);</span><br><span class="line">    imshow(img,[])</span><br><span class="line">    <span class="built_in">hold</span> on</span><br><span class="line">    <span class="built_in">plot</span>(x_c,y_c,<span class="string">'*'</span>,<span class="string">'MarkerSize'</span>,<span class="number">10</span>,<span class="string">'MarkerEdgeColor'</span>,<span class="string">'r'</span>)</span><br><span class="line">  </span><br></pre></td></tr></tbody></table></figure><h3 id="b-高斯光质心定位"><a href="#b-高斯光质心定位" class="headerlink" title="b.高斯光质心定位"></a>b.高斯光质心定位</h3><p><em><strong>参考博客：</strong></em></p><p><em><a href="https://blog.csdn.net/dedell/article/details/107960123">https://blog.csdn.net/dedell/article/details/107960123</a></em></p><p>我们认为接收的光强组成式子如下：<br>$$<br>I_i=S_i+N_i<br>$$</p><p>$$<br>其中S_i为光源物体发出来的有效光，N_i为背景噪声，I_i为观测光强<br>$$</p><p>其中我们认为星点类光源接收到的光，满足高斯分布，我们也大致认为，波前传感器接收到的光强满足高斯分布，分布公式如下面式子所示：<br>$$<br>S(x_i,y_i|v)=Aexp(-\frac{(x_i-x_c)^2}{2\delta_x^2}-\frac{(y_i-y_c)^2}{2\delta_y^2})<br>\<br>\delta_x与\delta_y为标准差，A为光强，x_i,y_i为图像坐标，x_c,y_c为被计算质心<br>\<br>如何确定\delta_x\delta_y为主要研究对象<br>$$<br><img src="https://s1.ax1x.com/2018/11/18/izOkMn.png" alt="img"></p><p>使用快速高斯质心定位算法，其核心公式为：<br>$$</p><p>$$</p><figure class="highlight matlab"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">clc;</span><br><span class="line">close all;</span><br><span class="line">clear all</span><br><span class="line"></span><br><span class="line">img=double(rgb2gray(imread(<span class="string">'test.png'</span>)));</span><br><span class="line">k=<span class="built_in">abs</span>(fftshift(fft2(img)));</span><br><span class="line">img=img+<span class="built_in">rand</span>(<span class="number">145</span>,<span class="number">150</span>);</span><br><span class="line"><span class="built_in">figure</span></span><br><span class="line">imshow(k,[])</span><br><span class="line">[m,n]=<span class="built_in">size</span>(k);</span><br><span class="line"><span class="built_in">figure</span></span><br><span class="line"> <span class="built_in">plot</span>(<span class="number">1</span>:m,k(:,n/<span class="number">2</span>))</span><br><span class="line"> <span class="built_in">figure</span></span><br><span class="line"> imshow(img,[])</span><br><span class="line"> m1=<span class="built_in">linspace</span>(<span class="number">0</span>,m,m);</span><br><span class="line"> n1=<span class="built_in">linspace</span>(<span class="number">0</span>,n,n);</span><br><span class="line"> [m2 n2]=<span class="built_in">meshgrid</span>(n1,m1);</span><br><span class="line"> I_ix_i2=img.*(m2.^<span class="number">2</span>);</span><br><span class="line"> I_iy_i2=img.*(n2.^<span class="number">2</span>);</span><br><span class="line"> I_ix_i=img.*(m2);</span><br><span class="line"> I_iy_i=img.*(n2);</span><br><span class="line"> I_i=img;</span><br><span class="line"> bb=img.*<span class="built_in">log</span>(img);</span><br><span class="line"> <span class="comment">%% 写这么丑的原因使因为这样子好看原理</span></span><br><span class="line"> aaaa=[sum(I_ix_i2(:).^<span class="number">2</span>)           sum(I_ix_i2(:).*I_iy_i2(:) ) sum(I_ix_i2(:).*I_ix_i(:))  sum(I_ix_i2(:).*I_iy_i(:))  sum(I_ix_i2(:).*img(:));</span><br><span class="line">       sum(I_ix_i2(:).*I_iy_i2(:))  sum(I_iy_i2(:).^<span class="number">2</span> )          sum(I_iy_i2(:).*I_ix_i(:))  sum(I_iy_i2(:).*I_iy_i(:))  sum(I_iy_i2(:).*img(:));</span><br><span class="line">       sum(I_ix_i2(:).*I_ix_i(:))   sum(I_ix_i(:).*I_iy_i2(:) )  sum(I_ix_i(:).*I_ix_i(:))   sum(I_ix_i(:).*I_iy_i(:))   sum(I_ix_i(:).*img(:));</span><br><span class="line">       sum(I_ix_i2(:).*I_iy_i(:))   sum(I_iy_i(:).*I_iy_i2(:) )  sum(I_ix_i(:).*I_iy_i(:))   sum(I_iy_i(:).*I_iy_i(:))   sum(I_iy_i(:).*img(:));</span><br><span class="line">       sum(I_ix_i2(:).*I_i(:))      sum(I_i(:).*I_iy_i2(:) )     sum(I_i(:).*I_ix_i(:))      sum(I_i(:).*I_iy_i(:))      sum(I_i(:).*img(:));];</span><br><span class="line"> bbbb=-[sum(I_ix_i2(:).*bb(:))</span><br><span class="line">       sum(I_iy_i2(:).*bb(:))</span><br><span class="line">       sum(I_ix_i(:).*bb(:))</span><br><span class="line">       sum(I_iy_i(:).*bb(:))</span><br><span class="line">       sum(I_i(:).*bb(:))];</span><br><span class="line">   cccc=mldivide(aaaa,bbbb);</span><br><span class="line">   x_c=-cccc(<span class="number">3</span>)/cccc(<span class="number">1</span>)/<span class="number">2</span></span><br><span class="line">   y_c=-cccc(<span class="number">4</span>)/cccc(<span class="number">2</span>)/<span class="number">2</span></span><br><span class="line">   t_x=<span class="number">1</span>/<span class="built_in">sqrt</span>(<span class="number">2</span>*cccc(<span class="number">1</span>))</span><br><span class="line">   <span class="built_in">figure</span></span><br><span class="line">    set(gcf,<span class="string">'color'</span>,<span class="string">'w'</span>);</span><br><span class="line">    imshow(img,[])</span><br><span class="line">    <span class="built_in">hold</span> on</span><br><span class="line">    <span class="built_in">plot</span>(x_c,y_c,<span class="string">'*'</span>,<span class="string">'MarkerSize'</span>,<span class="number">10</span>,<span class="string">'MarkerEdgeColor'</span>,<span class="string">'r'</span>)</span><br></pre></td></tr></tbody></table></figure>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>使用直接波前传感获取成像的文章与代码阅读</title>
+    <url>/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji/</url>
+    <content><![CDATA[<h1 id="1-文章介绍"><a href="#1-文章介绍" class="headerlink" title="1.文章介绍"></a>1.文章介绍</h1><p>使用双光子显微镜进行超分辨衍射成像，成像深度为850微米脑膜下的活体小鼠的大脑，使用导星进行直接波前传感</p>
+<p>双光子激光扫描显微镜对于亚细胞的哺乳动物脑成像是必不可少的，但是随着成像深度的增加，分辨率由于各种各样的原因发生显而易见的降低（不降低就有鬼了），使用高能激发脉冲来降低分辨率的下降，但是非线性光损伤的风险增加（大师兄的飞秒直接打穿了遮布）</p>
+<p>然后前一段全是讲一些医学上的玩意，怎么用荧光染料注射的（眼球后注射，走视神经那块路，啧，死亡空间既视感）</p>
+<h1 id="2-器件说明："><a href="#2-器件说明：" class="headerlink" title="2.器件说明："></a>2.器件说明：</h1><h4 id="1-部分一："><a href="#1-部分一：" class="headerlink" title="1.部分一："></a>1.部分一：</h4><h4 id="光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels-Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元"><a href="#光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels-Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元" class="headerlink" title="光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元"></a>光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元</h4><h4 id="2-部分二："><a href="#2-部分二：" class="headerlink" title="2.部分二："></a>2.部分二：</h4><h4 id="经过两个透镜将光源扩大十倍"><a href="#经过两个透镜将光源扩大十倍" class="headerlink" title="经过两个透镜将光源扩大十倍"></a>经过两个透镜将光源扩大十倍</h4><h4 id="3-部分三："><a href="#3-部分三：" class="headerlink" title="3.部分三："></a>3.部分三：</h4><h4 id="进入变形镜后反射进入一个4F系统"><a href="#进入变形镜后反射进入一个4F系统" class="headerlink" title="进入变形镜后反射进入一个4F系统"></a>进入变形镜后反射进入一个4F系统</h4><h4 id="4-部分四："><a href="#4-部分四：" class="headerlink" title="4.部分四："></a>4.部分四：</h4>]]></content>
       <categories>
-          
-          <category> 自适应光学技术 </category>
-          
-          <category> 图像处理 </category>
-          
-          <category> 质心定位 </category>
-          
+        <category>自适应光学技术</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> matlab </tag>
-            
-            <tag> SHS </tag>
-            
-            <tag> AO </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用直接波前传感获取成像的文章与代码阅读</title>
-      <link href="/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji/"/>
-      <url>/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji/</url>
-      
-        <content type="html"><![CDATA[<h1 id="1-文章介绍"><a href="#1-文章介绍" class="headerlink" title="1.文章介绍"></a>1.文章介绍</h1><p>使用双光子显微镜进行超分辨衍射成像，成像深度为850微米脑膜下的活体小鼠的大脑，使用导星进行直接波前传感</p><p>双光子激光扫描显微镜对于亚细胞的哺乳动物脑成像是必不可少的，但是随着成像深度的增加，分辨率由于各种各样的原因发生显而易见的降低（不降低就有鬼了），使用高能激发脉冲来降低分辨率的下降，但是非线性光损伤的风险增加（大师兄的飞秒直接打穿了遮布）</p><p>然后前一段全是讲一些医学上的玩意，怎么用荧光染料注射的（眼球后注射，走视神经那块路，啧，死亡空间既视感）</p><h1 id="2-器件说明："><a href="#2-器件说明：" class="headerlink" title="2.器件说明："></a>2.器件说明：</h1><h4 id="1-部分一："><a href="#1-部分一：" class="headerlink" title="1.部分一："></a>1.部分一：</h4><h4 id="光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels-Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元"><a href="#光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels-Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元" class="headerlink" title="光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元"></a>光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元</h4><h4 id="2-部分二："><a href="#2-部分二：" class="headerlink" title="2.部分二："></a>2.部分二：</h4><h4 id="经过两个透镜将光源扩大十倍"><a href="#经过两个透镜将光源扩大十倍" class="headerlink" title="经过两个透镜将光源扩大十倍"></a>经过两个透镜将光源扩大十倍</h4><h4 id="3-部分三："><a href="#3-部分三：" class="headerlink" title="3.部分三："></a>3.部分三：</h4><h4 id="进入变形镜后反射进入一个4F系统"><a href="#进入变形镜后反射进入一个4F系统" class="headerlink" title="进入变形镜后反射进入一个4F系统"></a>进入变形镜后反射进入一个4F系统</h4><h4 id="4-部分四："><a href="#4-部分四：" class="headerlink" title="4.部分四："></a>4.部分四：</h4>]]></content>
-      
-      
+      <tags>
+        <tag>matlab</tag>
+        <tag>SHS</tag>
+        <tag>AO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于高斯掩膜的质心定位算法</title>
+    <url>/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</url>
+    <content><![CDATA[<h2 id="1-文章地址"><a href="#1-文章地址" class="headerlink" title="1.文章地址"></a>1.文章地址</h2><p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20</a></p>
+<h2 id="2-算法公式推导"><a href="#2-算法公式推导" class="headerlink" title="2.算法公式推导"></a>2.算法公式推导</h2><h3 id="a-传统质心定位算法"><a href="#a-传统质心定位算法" class="headerlink" title="a.传统质心定位算法"></a>a.传统质心定位算法</h3><p>$$</p>
+<p>$$</p>
+<p>$$<br>(x_c,y_c)=(\frac{\sum_iI_ix_i}{\sum_iI_i},\frac{\sum_iI_iy_i}{\sum_iI_i})<br>$$</p>
+<p>matlab代码实现：</p>
+<pre class="language-matlab" data-language="matlab"><code class="language-matlab">clc;
+close all;
+clear all
+img=imread('test.png');
+img=rgb2gray(img);
+img=double(img);
+c=sum(sum(img));
+[m,n]=size(img);
+aa=(1:1:m);
+dd=aa*img;
+y_c=sum(dd)/c;
+bb=(1:1:n)';
+x_c=sum(img*bb)/c
+figure
+    set(gcf,'color','w');
+    imshow(img,[])
+    hold on
+    plot(x_c,y_c,'*','MarkerSize',10,'MarkerEdgeColor','r')
+  </code></pre>
+
+<h3 id="b-高斯光质心定位"><a href="#b-高斯光质心定位" class="headerlink" title="b.高斯光质心定位"></a>b.高斯光质心定位</h3><p><em><strong>参考博客：</strong></em></p>
+<p><em><a href="https://blog.csdn.net/dedell/article/details/107960123">https://blog.csdn.net/dedell/article/details/107960123</a></em></p>
+<p>我们认为接收的光强组成式子如下：<br>$$<br>I_i=S_i+N_i<br>$$</p>
+<p>$$<br>其中S_i为光源物体发出来的有效光，N_i为背景噪声，I_i为观测光强<br>$$</p>
+<p>其中我们认为星点类光源接收到的光，满足高斯分布，我们也大致认为，波前传感器接收到的光强满足高斯分布，分布公式如下面式子所示：<br>$$<br>S(x_i,y_i|v)=Aexp(-\frac{(x_i-x_c)^2}{2\delta_x^2}-\frac{(y_i-y_c)^2}{2\delta_y^2})<br>\<br>\delta_x与\delta_y为标准差，A为光强，x_i,y_i为图像坐标，x_c,y_c为被计算质心<br>\<br>如何确定\delta_x\delta_y为主要研究对象<br>$$<br><img src="https://s1.ax1x.com/2018/11/18/izOkMn.png" alt="img"></p>
+<p>使用快速高斯质心定位算法，其核心公式为：<br>$$</p>
+<p>$$</p>
+<pre class="language-matlab" data-language="matlab"><code class="language-matlab">clc;
+close all;
+clear all
+
+img=double(rgb2gray(imread('test.png')));
+k=abs(fftshift(fft2(img)));
+img=img+rand(145,150);
+figure
+imshow(k,[])
+[m,n]=size(k);
+figure
+ plot(1:m,k(:,n/2))
+ figure
+ imshow(img,[])
+ m1=linspace(0,m,m);
+ n1=linspace(0,n,n);
+ [m2 n2]=meshgrid(n1,m1);
+ I_ix_i2=img.*(m2.^2);
+ I_iy_i2=img.*(n2.^2);
+ I_ix_i=img.*(m2);
+ I_iy_i=img.*(n2);
+ I_i=img;
+ bb=img.*log(img);
+ %% 写这么丑的原因使因为这样子好看原理
+ aaaa=[sum(I_ix_i2(:).^2)           sum(I_ix_i2(:).*I_iy_i2(:) ) sum(I_ix_i2(:).*I_ix_i(:))  sum(I_ix_i2(:).*I_iy_i(:))  sum(I_ix_i2(:).*img(:));
+       sum(I_ix_i2(:).*I_iy_i2(:))  sum(I_iy_i2(:).^2 )          sum(I_iy_i2(:).*I_ix_i(:))  sum(I_iy_i2(:).*I_iy_i(:))  sum(I_iy_i2(:).*img(:));
+       sum(I_ix_i2(:).*I_ix_i(:))   sum(I_ix_i(:).*I_iy_i2(:) )  sum(I_ix_i(:).*I_ix_i(:))   sum(I_ix_i(:).*I_iy_i(:))   sum(I_ix_i(:).*img(:));
+       sum(I_ix_i2(:).*I_iy_i(:))   sum(I_iy_i(:).*I_iy_i2(:) )  sum(I_ix_i(:).*I_iy_i(:))   sum(I_iy_i(:).*I_iy_i(:))   sum(I_iy_i(:).*img(:));
+       sum(I_ix_i2(:).*I_i(:))      sum(I_i(:).*I_iy_i2(:) )     sum(I_i(:).*I_ix_i(:))      sum(I_i(:).*I_iy_i(:))      sum(I_i(:).*img(:));];
+ bbbb=-[sum(I_ix_i2(:).*bb(:))
+       sum(I_iy_i2(:).*bb(:))
+       sum(I_ix_i(:).*bb(:))
+       sum(I_iy_i(:).*bb(:))
+       sum(I_i(:).*bb(:))];
+   cccc=mldivide(aaaa,bbbb);
+   x_c=-cccc(3)/cccc(1)/2
+   y_c=-cccc(4)/cccc(2)/2
+   t_x=1/sqrt(2*cccc(1))
+   figure
+    set(gcf,'color','w');
+    imshow(img,[])
+    hold on
+    plot(x_c,y_c,'*','MarkerSize',10,'MarkerEdgeColor','r')</code></pre>
+
+]]></content>
       <categories>
-          
-          <category> 自适应光学技术 </category>
-          
+        <category>自适应光学技术</category>
+        <category>图像处理</category>
+        <category>质心定位</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> matlab </tag>
-            
-            <tag> SHS </tag>
-            
-            <tag> AO </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>matlab</tag>
+        <tag>SHS</tag>
+        <tag>AO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2022/04/13/wei-ming-ming/</url>
+    <content><![CDATA[]]></content>
+  </entry>
 </search>
