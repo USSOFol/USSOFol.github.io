@@ -159,7 +159,7 @@ sfigure(3);
 imshow(bw);
 title('binary image');
 %% remove small objects
-bw = bwareaopen(bw, npixsmall);             %matlab自带函数bwareaopen()，定义尺寸后自动消除小于此尺寸物体，注意输入要为二值
+bw = bwareaopen(bw, npixsmall);%matlab自带函数bwareaopen()，定义尺寸后自动消除小于此尺寸物体，注意输入要为二值
 % sfigure(4);
 % imshow(bw);
 % title('remove small objects 1');
@@ -186,9 +186,9 @@ imshow(sh_flat);
 hold on;
 for k = 1:nspots
     c = s(k).Centroid;
-    plot(c(1), c(2), 'ro');%为什么又画一遍
+    plot(c(1), c(2), 'ro');%再画一遍看看效果
 end
-%下面的for函数定位画框
+%下面的for函数定位画框，顺带画个框
 for k=1:nspots
     c = s(k).Centroid;
     c = round(c);%取整
@@ -196,7 +196,7 @@ for k=1:nspots
     maxx = c(1) + radius;
     miny = c(2) - radius;
     maxy = c(2) + radius;
-    box = [minx, maxx, miny, maxy];%为一个32*32的框
+    box = [minx, maxx, miny, maxy];%为一个20*20的框
     squaregrid(k, :) = box;%每一行为一个矩形
     sfigure(6);
     hold on;
@@ -219,6 +219,22 @@ squaregrid%存储点图坐标点进入结构体
 end</code></pre>
 <h2 id="2代码分段讲解"><a class="markdownIt-Anchor" href="#2代码分段讲解"></a> 2.代码分段讲解</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/test.png" alt="光斑点阵图"></p>
+<p>这图先拿来讲解，顺带讲讲开运算闭运算连通分量的数学原理</p>
+<pre class="language-matlab" data-language="matlab"><code class="language-matlab">sh_flat = img;           %加载上面那个图
+%% tunable parameters                 %加载需要使用的参数
+thresh = 0.08;      %二值化用阈值 0.08例子代码
+npixsmall = 8;      %可以认为是噪声光斑的尺寸阈值    
+strel_rad = 8;      %粗网格半径
+radius =10;%粗网格半径传递于radius=16
+% 记住这些参数，都有用
+%% thresh = graythresh(sh_flat);
+
+%这里的算法可以改进为自适应阈值，使用灰度统计后进行
+bw = im2bw(sh_flat, thresh);             %不减背景图像后二值，阈值0.08
+% 获取二值图像并显示
+sfigure(3);
+imshow(bw);
+title('binary image');</code></pre>
 ]]></content>
       <categories>
         <category>自适应光学技术</category>
