@@ -488,21 +488,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-14
+                    2022-04-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    545
+                    596
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
@@ -526,9 +526,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="1-文章地址"><a href="#1-文章地址" class="headerlink" title="1.文章地址"></a>1.文章地址</h2><p><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6163372/#:~:text=The%20%EE%80%80Gaussian%20fitting%20algorithm%EE%80%81%20%28GF%29%20is%20the%20most,the%20experiments%20are%20carried%20on%20the%20MATLAB%20</a></p>
-<h2 id="2-算法公式推导"><a href="#2-算法公式推导" class="headerlink" title="2.算法公式推导"></a>2.算法公式推导</h2><h3 id="a-传统质心定位算法"><a href="#a-传统质心定位算法" class="headerlink" title="a.传统质心定位算法"></a>a.传统质心定位算法</h3><p>$$</p>
-<p>$$</p>
-<p>$$<br>(x_c,y_c)=(\frac{\sum_iI_ix_i}{\sum_iI_i},\frac{\sum_iI_iy_i}{\sum_iI_i})<br>$$</p>
+<h2 id="2-算法公式推导"><a href="#2-算法公式推导" class="headerlink" title="2.算法公式推导"></a>2.算法公式推导</h2><h3 id="a-传统质心定位算法"><a href="#a-传统质心定位算法" class="headerlink" title="a.传统质心定位算法"></a>a.传统质心定位算法</h3><p>$$<br>(x_c,y_c)=(\frac{\sum_iI_ix_i}{\sum_iI_i},\frac{\sum_iI_iy_i}{\sum_iI_i})<br>$$</p>
 <p>matlab代码实现：</p>
 <pre class="language-matlab" data-language="matlab"><code class="language-matlab">clc;
 close all;
@@ -554,9 +552,10 @@ figure
 <p><em><a target="_blank" rel="noopener" href="https://blog.csdn.net/dedell/article/details/107960123">https://blog.csdn.net/dedell/article/details/107960123</a></em></p>
 <p>我们认为接收的光强组成式子如下：<br>$$<br>I_i=S_i+N_i<br>$$</p>
 <p>$$<br>其中S_i为光源物体发出来的有效光，N_i为背景噪声，I_i为观测光强<br>$$</p>
-<p>其中我们认为星点类光源接收到的光，满足高斯分布，我们也大致认为，波前传感器接收到的光强满足高斯分布，分布公式如下面式子所示：<br>$$<br>S(x_i,y_i|v)=Aexp(-\frac{(x_i-x_c)^2}{2\delta_x^2}-\frac{(y_i-y_c)^2}{2\delta_y^2})<br>\<br>\delta_x与\delta_y为标准差，A为光强，x_i,y_i为图像坐标，x_c,y_c为被计算质心<br>\<br>如何确定\delta_x\delta_y为主要研究对象<br>$$<br><img src="https://s1.ax1x.com/2018/11/18/izOkMn.png" alt="img"></p>
-<p>使用快速高斯质心定位算法，其核心公式为：<br>$$</p>
-<p>$$</p>
+<p>其中我们认为星点类光源接收到的光，满足高斯分布，我们也大致认为，波前传感器接收到的光强满足高斯分布，分布公式如下面式子所示：<br>$$<br>S(x_i,y_i|v)=Aexp(-\frac{(x_i-x_c)^2}{2\sigma_x^2}-\frac{(y_i-y_c)^2}{2\sigma_y^2})<br>\<br>\sigma_x与\sigma_y为标准差，A为光强，x_i,y_i为图像坐标，x_c,y_c为被计算质心<br>\<br>如何确定\sigma_x\sigma_y为主要研究对象<br>$$<br><img src="https://s1.ax1x.com/2018/11/18/izOkMn.png" alt="高斯光分布"></p>
+<p>使用快速高斯质心定位算法，其核心公式为：<br>$$<br>\left{<br>\begin{aligned}<br>m=\frac{1}{2\sigma_x^2}\<br>n=\frac{1}{2\sigma_y^2}\<br>p=-\frac{x_c}{\sigma_x^2}\<br>q=-\frac{y_c}{\sigma_y^2}\<br>k=\frac{x_c^2}{2\sigma_x^2}+\frac{y_c^2}{2\sigma_y^2}-InA\<br>\end{aligned}<br>\right.<br>$$</p>
+<p>$$<br>h_i=mI_ix_i^2+nI_iy_i^2+pI_ix_i+qI_iy_i+kI_i+I_iInI_i<br>$$</p>
+<p><img src="C:\Users\roll\AppData\Roaming\Typora\typora-user-images\image-20220415104414538.png" alt="计算用公式"></p>
 <pre class="language-matlab" data-language="matlab"><code class="language-matlab">clc;
 close all;
 clear all
@@ -1345,7 +1344,7 @@ figure
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">868</span>
+                        class="white-color">919</span>
             
             
             
