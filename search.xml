@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>使用直接波前传感获取成像的文章与代码阅读</title>
-    <url>/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji/</url>
-    <content><![CDATA[<h1 id="1文章介绍"><a class="markdownIt-Anchor" href="#1文章介绍"></a> 1.文章介绍</h1>
-<p>使用双光子显微镜进行超分辨衍射成像，成像深度为850微米脑膜下的活体小鼠的大脑，使用导星进行直接波前传感</p>
-<p>双光子激光扫描显微镜对于亚细胞的哺乳动物脑成像是必不可少的，但是随着成像深度的增加，分辨率由于各种各样的原因发生显而易见的降低（不降低就有鬼了），使用高能激发脉冲来降低分辨率的下降，但是非线性光损伤的风险增加（大师兄的飞秒直接打穿了遮布）</p>
-<p>然后前一段全是讲一些医学上的玩意，怎么用荧光染料注射的（眼球后注射，走视神经那块路，啧，死亡空间既视感）</p>
-<h1 id="2器件说明"><a class="markdownIt-Anchor" href="#2器件说明"></a> 2.器件说明：</h1>
-<h4 id="1部分一"><a class="markdownIt-Anchor" href="#1部分一"></a> 1.部分一：</h4>
-<h4 id="光源可调谐光源从680nm到1300nm飞秒激光器光源发出后通过一个pockels-cell普克尔盒可以利用电压来控制偏振态可以理解为电压控制的波片激光器内置色散补偿单元"><a class="markdownIt-Anchor" href="#光源可调谐光源从680nm到1300nm飞秒激光器光源发出后通过一个pockels-cell普克尔盒可以利用电压来控制偏振态可以理解为电压控制的波片激光器内置色散补偿单元"></a> 光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元</h4>
-<h4 id="2部分二"><a class="markdownIt-Anchor" href="#2部分二"></a> 2.部分二：</h4>
-<h4 id="经过两个透镜将光源扩大十倍"><a class="markdownIt-Anchor" href="#经过两个透镜将光源扩大十倍"></a> 经过两个透镜将光源扩大十倍</h4>
-<h4 id="3部分三"><a class="markdownIt-Anchor" href="#3部分三"></a> 3.部分三：</h4>
-<h4 id="进入变形镜后反射进入一个4f系统"><a class="markdownIt-Anchor" href="#进入变形镜后反射进入一个4f系统"></a> 进入变形镜后反射进入一个4F系统</h4>
-<h4 id="4部分四"><a class="markdownIt-Anchor" href="#4部分四"></a> 4.部分四：</h4>
-]]></content>
-      <categories>
-        <category>自适应光学技术</category>
-      </categories>
-      <tags>
-        <tag>matlab</tag>
-        <tag>SHS</tag>
-        <tag>AO</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于高斯掩膜的质心定位算法</title>
     <url>/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</url>
     <content><![CDATA[<h2 id="1文章地址"><a class="markdownIt-Anchor" href="#1文章地址"></a> 1.文章地址</h2>
@@ -132,6 +107,31 @@ figure
         <category>自适应光学技术</category>
         <category>图像处理</category>
         <category>质心定位</category>
+      </categories>
+      <tags>
+        <tag>matlab</tag>
+        <tag>SHS</tag>
+        <tag>AO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用直接波前传感获取成像的文章与代码阅读</title>
+    <url>/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji/</url>
+    <content><![CDATA[<h1 id="1文章介绍"><a class="markdownIt-Anchor" href="#1文章介绍"></a> 1.文章介绍</h1>
+<p>使用双光子显微镜进行超分辨衍射成像，成像深度为850微米脑膜下的活体小鼠的大脑，使用导星进行直接波前传感</p>
+<p>双光子激光扫描显微镜对于亚细胞的哺乳动物脑成像是必不可少的，但是随着成像深度的增加，分辨率由于各种各样的原因发生显而易见的降低（不降低就有鬼了），使用高能激发脉冲来降低分辨率的下降，但是非线性光损伤的风险增加（大师兄的飞秒直接打穿了遮布）</p>
+<p>然后前一段全是讲一些医学上的玩意，怎么用荧光染料注射的（眼球后注射，走视神经那块路，啧，死亡空间既视感）</p>
+<h1 id="2器件说明"><a class="markdownIt-Anchor" href="#2器件说明"></a> 2.器件说明：</h1>
+<h4 id="1部分一"><a class="markdownIt-Anchor" href="#1部分一"></a> 1.部分一：</h4>
+<h4 id="光源可调谐光源从680nm到1300nm飞秒激光器光源发出后通过一个pockels-cell普克尔盒可以利用电压来控制偏振态可以理解为电压控制的波片激光器内置色散补偿单元"><a class="markdownIt-Anchor" href="#光源可调谐光源从680nm到1300nm飞秒激光器光源发出后通过一个pockels-cell普克尔盒可以利用电压来控制偏振态可以理解为电压控制的波片激光器内置色散补偿单元"></a> 光源：可调谐光源，从680nm到1300nm飞秒激光器，光源发出后通过一个Pockels Cell（普克尔盒：可以利用电压来控制偏振态，可以理解为电压控制的波片），激光器内置色散补偿单元</h4>
+<h4 id="2部分二"><a class="markdownIt-Anchor" href="#2部分二"></a> 2.部分二：</h4>
+<h4 id="经过两个透镜将光源扩大十倍"><a class="markdownIt-Anchor" href="#经过两个透镜将光源扩大十倍"></a> 经过两个透镜将光源扩大十倍</h4>
+<h4 id="3部分三"><a class="markdownIt-Anchor" href="#3部分三"></a> 3.部分三：</h4>
+<h4 id="进入变形镜后反射进入一个4f系统"><a class="markdownIt-Anchor" href="#进入变形镜后反射进入一个4f系统"></a> 进入变形镜后反射进入一个4F系统</h4>
+<h4 id="4部分四"><a class="markdownIt-Anchor" href="#4部分四"></a> 4.部分四：</h4>
+]]></content>
+      <categories>
+        <category>自适应光学技术</category>
       </categories>
       <tags>
         <tag>matlab</tag>
