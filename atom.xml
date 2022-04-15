@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-04-15T02:45:26.737Z</updated>
+  <updated>2022-04-14T15:51:53.272Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -15,39 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>基于高斯掩膜的质心定位算法</title>
-    <link href="http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/"/>
-    <id>http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</id>
-    <published>2022-04-12T16:00:00.000Z</published>
-    <updated>2022-04-15T02:45:26.737Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1-文章地址&quot;&gt;&lt;a href=&quot;#1-文章地址&quot; class=&quot;headerlink&quot; title=&quot;1.文章地址&quot;&gt;&lt;/a&gt;1.文章地址&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="自适应光学技术" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="图像处理" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-    <category term="质心定位" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/%E8%B4%A8%E5%BF%83%E5%AE%9A%E4%BD%8D/"/>
-    
-    
-    <category term="matlab" scheme="http://ussofol.github.io/tags/matlab/"/>
-    
-    <category term="SHS" scheme="http://ussofol.github.io/tags/SHS/"/>
-    
-    <category term="AO" scheme="http://ussofol.github.io/tags/AO/"/>
-    
-  </entry>
   
   <entry>
     <title>使用直接波前传感获取成像的文章与代码阅读</title>
@@ -61,7 +28,7 @@
       
         
         
-    <summary type="html">&lt;h1 id=&quot;1-文章介绍&quot;&gt;&lt;a href=&quot;#1-文章介绍&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;1文章介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1文章介绍&quot;&gt;&lt;/a&gt;</summary>
         
       
     
