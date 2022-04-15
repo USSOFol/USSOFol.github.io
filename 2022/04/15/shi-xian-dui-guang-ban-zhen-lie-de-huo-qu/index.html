@@ -499,7 +499,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    730
+                    865
                 </div>
                 
 
@@ -625,6 +625,19 @@ title('binary image');</code></pre>
 <p>计算完之后的二值图长下面那个样子：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/erzhi.png" alt="我是binary"></p>
 <pre class="language-matlab" data-language="matlab"><code class="language-matlab">bw = bwareaopen(bw, npixsmall);%matlab自带函数bwareaopen()，定义尺寸后自动消除小于此尺寸物体，注意输入要为二值,这下就能知道npixsmall的用途了</code></pre>
+<p>这里去除掉一部分过于小的点，能够去除一部分噪声，但是也有可能去除掉一些微弱的信号</p>
+<pre class="language-matlab" data-language="matlab"><code class="language-matlab">%% remove edges
+% strel形态学处理函数
+% 创建圆盘半径8
+se = strel('disk',strel_rad); %创建一个指定半径strel_rad的平面圆盘形的结构元素
+bw = imclose(bw, se);%闭运算
+ sfigure(5);
+ imshow(bw);
+ title('remove small objects 2');
+%%
+cc = bwconncomp(bw, 4);%找连通分量
+s = regionprops(cc, 'Centroid');%检测图像区域的属性，寻找连通分量的质心
+nspots = length(s);%计数，质心个数</code></pre>
 
                 
             </div>
@@ -1374,7 +1387,7 @@ title('binary image');</code></pre>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.9k</span>
+                        class="white-color">2k</span>
             
             
             
