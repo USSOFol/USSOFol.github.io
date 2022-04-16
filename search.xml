@@ -104,8 +104,6 @@ figure
     plot(x_c,y_c,'*','MarkerSize',10,'MarkerEdgeColor','r')</code></pre>
 ]]></content>
       <categories>
-        <category>自适应光学技术</category>
-        <category>图像处理</category>
         <category>质心定位</category>
       </categories>
       <tags>
@@ -253,9 +251,6 @@ s = regionprops(cc, 'Centroid');%检测图像区域的属性，寻找连通分�
 nspots = length(s);%计数，质心个数</code></pre>
 ]]></content>
       <categories>
-        <category>自适应光学技术</category>
-        <category>图像处理</category>
-        <category>质心定位</category>
         <category>光斑分割</category>
       </categories>
       <tags>

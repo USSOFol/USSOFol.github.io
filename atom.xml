@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-04-16T02:24:13.559Z</updated>
+  <updated>2022-04-16T02:42:59.360Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://ussofol.github.io/2022/04/15/shi-xian-dui-guang-ban-zhen-lie-de-huo-qu/"/>
     <id>http://ussofol.github.io/2022/04/15/shi-xian-dui-guang-ban-zhen-lie-de-huo-qu/</id>
     <published>2022-04-14T16:00:00.000Z</published>
-    <updated>2022-04-16T02:24:13.559Z</updated>
+    <updated>2022-04-16T02:42:59.360Z</updated>
     
     
       
@@ -36,13 +36,7 @@
     
     
     
-    <category term="自适应光学技术" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="图像处理" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-    <category term="质心定位" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/%E8%B4%A8%E5%BF%83%E5%AE%9A%E4%BD%8D/"/>
-    
-    <category term="光斑分割" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/%E8%B4%A8%E5%BF%83%E5%AE%9A%E4%BD%8D/%E5%85%89%E6%96%91%E5%88%86%E5%89%B2/"/>
+    <category term="光斑分割" scheme="http://ussofol.github.io/categories/%E5%85%89%E6%96%91%E5%88%86%E5%89%B2/"/>
     
     
     <category term="matlab" scheme="http://ussofol.github.io/tags/matlab/"/>
@@ -58,7 +52,7 @@
     <link href="http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/"/>
     <id>http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</id>
     <published>2022-04-12T16:00:00.000Z</published>
-    <updated>2022-04-15T07:50:36.687Z</updated>
+    <updated>2022-04-16T02:43:11.108Z</updated>
     
     
       
@@ -72,11 +66,7 @@
     
     
     
-    <category term="自适应光学技术" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
-    
-    <category term="图像处理" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-    
-    <category term="质心定位" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/%E8%B4%A8%E5%BF%83%E5%AE%9A%E4%BD%8D/"/>
+    <category term="质心定位" scheme="http://ussofol.github.io/categories/%E8%B4%A8%E5%BF%83%E5%AE%9A%E4%BD%8D/"/>
     
     
     <category term="matlab" scheme="http://ussofol.github.io/tags/matlab/"/>
