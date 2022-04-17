@@ -285,4 +285,17 @@ end</code></pre>
         <tag>AO</tag>
       </tags>
   </entry>
+  <entry>
+    <title>基于高斯掩膜的质心定位算法</title>
+    <url>/2022/04/16/xin/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>质心定位</category>
+      </categories>
+      <tags>
+        <tag>matlab</tag>
+        <tag>SHS</tag>
+        <tag>AO为：</tag>
+      </tags>
+  </entry>
 </search>
