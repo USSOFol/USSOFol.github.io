@@ -104,6 +104,8 @@ figure
     imshow(img,[])
     hold on
     plot(x_c,y_c,'*','MarkerSize',10,'MarkerEdgeColor','r')</code></pre>
+<p>高斯拟合法比灰度质心定位法好很多，这里随机了一百个质心偏移的点，最后误差结果如图所示</p>
+<p><img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/%E6%96%97%E6%B3%95.png" alt=""></p>
 ]]></content>
       <categories>
         <category>质心定位</category>
