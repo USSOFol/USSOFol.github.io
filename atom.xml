@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-04-17T02:58:52.681Z</updated>
+  <updated>2022-04-17T03:39:52.363Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -17,23 +17,19 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>题目暂定</title>
-    <link href="http://ussofol.github.io/2022/04/16/xin/"/>
-    <id>http://ussofol.github.io/2022/04/16/xin/</id>
+    <title>机器学习</title>
+    <link href="http://ussofol.github.io/2022/04/16/ji-qi-xue-xi/"/>
+    <id>http://ussofol.github.io/2022/04/16/ji-qi-xue-xi/</id>
     <published>2022-04-15T16:00:00.000Z</published>
-    <updated>2022-04-17T02:58:52.681Z</updated>
+    <updated>2022-04-17T03:39:52.363Z</updated>
     
     
     
     
-    <category term="质心定位" scheme="http://ussofol.github.io/categories/%E8%B4%A8%E5%BF%83%E5%AE%9A%E4%BD%8D/"/>
+    <category term="机器学习" scheme="http://ussofol.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="matlab" scheme="http://ussofol.github.io/tags/matlab/"/>
-    
-    <category term="SHS" scheme="http://ussofol.github.io/tags/SHS/"/>
-    
-    <category term="AO为：" scheme="http://ussofol.github.io/tags/AO%E4%B8%BA%EF%BC%9A/"/>
+    <category term="机器学习" scheme="http://ussofol.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -73,7 +69,7 @@
     <link href="http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/"/>
     <id>http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</id>
     <published>2022-04-12T16:00:00.000Z</published>
-    <updated>2022-04-16T02:43:11.108Z</updated>
+    <updated>2022-04-18T08:19:45.463Z</updated>
     
     
       

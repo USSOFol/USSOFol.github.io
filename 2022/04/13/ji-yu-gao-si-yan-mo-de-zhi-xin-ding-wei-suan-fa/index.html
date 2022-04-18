@@ -41,10 +41,10 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2">
+<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="DLX_Blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 <body>
@@ -489,14 +489,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-16
+                    2022-04-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    805
+                    809
                 </div>
                 
 
@@ -588,7 +588,7 @@ clear all
 
 img=double(rgb2gray(imread('test.png')));
 k=abs(fftshift(fft2(img)));
-img=img+rand(145,150);
+img=img;
 figure
 imshow(k,[])
 [m,n]=size(k);
@@ -604,7 +604,9 @@ figure
  I_ix_i=img.*(m2);
  I_iy_i=img.*(n2);
  I_i=img;
+ where=find(img==0);
  bb=img.*log(img);
+ bb(where)=0;
  %% 写这么丑的原因使因为这样子好看原理
  aaaa=[sum(I_ix_i2(:).^2)           sum(I_ix_i2(:).*I_iy_i2(:) ) sum(I_ix_i2(:).*I_ix_i(:))  sum(I_ix_i2(:).*I_iy_i(:))  sum(I_ix_i2(:).*img(:));
        sum(I_ix_i2(:).*I_iy_i2(:))  sum(I_iy_i2(:).^2 )          sum(I_iy_i2(:).*I_ix_i(:))  sum(I_iy_i2(:).*I_iy_i(:))  sum(I_iy_i2(:).*img(:));

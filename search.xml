@@ -65,7 +65,7 @@ clear all
 
 img=double(rgb2gray(imread('test.png')));
 k=abs(fftshift(fft2(img)));
-img=img+rand(145,150);
+img=img;
 figure
 imshow(k,[])
 [m,n]=size(k);
@@ -81,7 +81,9 @@ figure
  I_ix_i=img.*(m2);
  I_iy_i=img.*(n2);
  I_i=img;
+ where=find(img==0);
  bb=img.*log(img);
+ bb(where)=0;
  %% 写这么丑的原因使因为这样子好看原理
  aaaa=[sum(I_ix_i2(:).^2)           sum(I_ix_i2(:).*I_iy_i2(:) ) sum(I_ix_i2(:).*I_ix_i(:))  sum(I_ix_i2(:).*I_iy_i(:))  sum(I_ix_i2(:).*img(:));
        sum(I_ix_i2(:).*I_iy_i2(:))  sum(I_iy_i2(:).^2 )          sum(I_iy_i2(:).*I_ix_i(:))  sum(I_iy_i2(:).*I_iy_i(:))  sum(I_iy_i2(:).*img(:));
@@ -305,16 +307,14 @@ end</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>题目暂定</title>
-    <url>/2022/04/16/xin/</url>
+    <title>机器学习</title>
+    <url>/2022/04/16/ji-qi-xue-xi/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>质心定位</category>
+        <category>机器学习</category>
       </categories>
       <tags>
-        <tag>matlab</tag>
-        <tag>SHS</tag>
-        <tag>AO为：</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
 </search>
