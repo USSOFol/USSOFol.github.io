@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-04-17T03:39:52.363Z</updated>
+  <updated>2022-04-19T07:48:22.020Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何给图像添加噪声</title>
+    <link href="http://ussofol.github.io/2022/04/19/zao-sheng-zeng-jia/"/>
+    <id>http://ussofol.github.io/2022/04/19/zao-sheng-zeng-jia/</id>
+    <published>2022-04-18T16:00:00.000Z</published>
+    <updated>2022-04-19T07:48:22.020Z</updated>
+    
+    
+    
+    
+    <category term="图像处理" scheme="http://ussofol.github.io/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+    
+    <category term="图像处理" scheme="http://ussofol.github.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>机器学习</title>
     <link href="http://ussofol.github.io/2022/04/16/ji-qi-xue-xi/"/>
     <id>http://ussofol.github.io/2022/04/16/ji-qi-xue-xi/</id>
     <published>2022-04-15T16:00:00.000Z</published>
-    <updated>2022-04-17T03:39:52.363Z</updated>
+    <updated>2022-04-19T07:47:00.495Z</updated>
     
     
     
@@ -69,14 +86,14 @@
     <link href="http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/"/>
     <id>http://ussofol.github.io/2022/04/13/ji-yu-gao-si-yan-mo-de-zhi-xin-ding-wei-suan-fa/</id>
     <published>2022-04-12T16:00:00.000Z</published>
-    <updated>2022-04-18T09:30:28.941Z</updated>
+    <updated>2022-04-19T03:02:22.914Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1文章地址&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1文章地址&quot;&gt;&lt;/a&gt; 1.文章地址&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;1参考文献地址&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1参考文献地址&quot;&gt;&lt;/a&gt; 1.参考文献地址&lt;/h2&gt;
 &lt;p&gt;&lt;a</summary>
         
       
