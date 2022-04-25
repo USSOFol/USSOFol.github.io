@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-04-19T07:48:22.020Z</updated>
+  <updated>2022-04-19T07:50:40.300Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -21,8 +21,18 @@
     <link href="http://ussofol.github.io/2022/04/19/zao-sheng-zeng-jia/"/>
     <id>http://ussofol.github.io/2022/04/19/zao-sheng-zeng-jia/</id>
     <published>2022-04-18T16:00:00.000Z</published>
-    <updated>2022-04-19T07:48:22.020Z</updated>
+    <updated>2022-04-19T07:50:40.300Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1信噪比&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1信噪比&quot;&gt;&lt;/a&gt; 1.信噪比&lt;/h2&gt;
+&lt;p&gt;信噪比定义公式&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;katex-display&quot;&gt;&lt;span</summary>
+        
+      
     
     
     
@@ -47,6 +57,25 @@
     
     
     <category term="机器学习" scheme="http://ussofol.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo设置备忘录</title>
+    <link href="http://ussofol.github.io/2022/04/16/hexo-she-zhi-bei-wang-lu/"/>
+    <id>http://ussofol.github.io/2022/04/16/hexo-she-zhi-bei-wang-lu/</id>
+    <published>2022-04-15T16:00:00.000Z</published>
+    <updated>2022-04-25T12:39:36.422Z</updated>
+    
+    
+    
+    
+    <category term="hexo" scheme="http://ussofol.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://ussofol.github.io/tags/hexo/"/>
+    
+    <category term="matery" scheme="http://ussofol.github.io/tags/matery/"/>
     
   </entry>
   
