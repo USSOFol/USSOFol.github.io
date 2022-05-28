@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-04-19T07:50:40.300Z</updated>
+  <updated>2022-05-28T02:53:34.662Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>anaconda常用命令与pycharm</title>
+    <link href="http://ussofol.github.io/2022/05/28/an-py/"/>
+    <id>http://ussofol.github.io/2022/05/28/an-py/</id>
+    <published>2022-05-27T16:00:00.000Z</published>
+    <updated>2022-05-28T02:53:34.662Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1anaconda常用命令&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1anaconda常用命令&quot;&gt;&lt;/a&gt; 1.anaconda常用命令&lt;/h2&gt;
+&lt;p&gt;信噪比定义公式&lt;/p&gt;
+&lt;p&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="编程前戏" scheme="http://ussofol.github.io/categories/%E7%BC%96%E7%A8%8B%E5%89%8D%E6%88%8F/"/>
+    
+    
+    <category term="编程前戏" scheme="http://ussofol.github.io/tags/%E7%BC%96%E7%A8%8B%E5%89%8D%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ussofol.github.io/2022/04/28/radial-polarization/"/>
+    <id>http://ussofol.github.io/2022/04/28/radial-polarization/</id>
+    <published>2022-04-28T07:47:55.954Z</published>
+    <updated>2022-04-28T08:13:17.383Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果在光束的每个位置上，偏振(电场)矢量指向光束的中心，则光束具有径向偏振特性。&lt;/p&gt;
+&lt;p&gt;实际上，使用波片阵列可以获得径向偏振光的近似，比如可以将光束分为八段，每一段的平均偏振态指向光束中心，那么就获得了一个近似的径向偏振光（&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何给图像添加噪声</title>

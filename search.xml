@@ -348,4 +348,32 @@ end</code></pre>
         <tag>matery</tag>
       </tags>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2022/04/28/radial-polarization/</url>
+    <content><![CDATA[<p>如果在光束的每个位置上，偏振(电场)矢量指向光束的中心，则光束具有径向偏振特性。</p>
+<p>实际上，使用波片阵列可以获得径向偏振光的近似，比如可以将光束分为八段，每一段的平均偏振态指向光束中心，那么就获得了一个近似的径向偏振光（<a href="https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/jrs.1953%EF%BC%89">https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/jrs.1953）</a></p>
+<p>利用液晶装置也可以改变光的偏振态，转换为径向偏振光。</p>
+<p>或者利用激光获得任何准直光源进行获取，其中Brewster window被Brewster angle的锥角所取代，这玩意被叫做旋转布儒斯特偏振器（Rotated Brewster Angle Polarizer），1986年就有了</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Brewster_window.svg/220px-Brewster_window.svg.png" alt="一个布儒斯特窗"></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Rotated_Brewster_Polarizer.jpg/1024px-Rotated_Brewster_Polarizer.jpg" alt="旋转布儒斯特偏振器"></p>
+<p>准直光进入该装置后，在双锥处进行两次空气-金属反射，在玻璃筒内进行一次空气-玻璃的布儒斯特角反射，以径向偏振光退出。后来，Kozawa又提出了一个类似的装置。一个相关的概念是方位角偏振，其中偏振矢量与光束切向。如果激光聚焦在双折射材料的光轴上，则径向偏振和方位偏振聚焦在不同的平面上。空间滤波器可用于选择感兴趣的偏振。</p>
+<p>径向偏振光可以产生比普通偏振态更小的光斑，也可以用于捕获小型粒子，制作光镊。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>anaconda常用命令与pycharm</title>
+    <url>/2022/05/28/an-py/</url>
+    <content><![CDATA[<h2 id="1anaconda常用命令"><a class="markdownIt-Anchor" href="#1anaconda常用命令"></a> 1.anaconda常用命令</h2>
+<p>信噪比定义公式</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mi>N</mi><mi>R</mi><mo>=</mo><mn>10</mn><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>10</mn></msub><mo stretchy="false">(</mo><mfrac><msub><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>g</mi><mi>n</mi><mi>a</mi><mi>l</mi></mrow></msub><msub><mi>P</mi><mrow><mi>n</mi><mi>o</mi><mi>s</mi><mi>i</mi><mi>e</mi></mrow></msub></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">SNR=10log_{10}(\frac{P_{signal}}{P_{nosie}})
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mord mathdefault mtight">o</span><span class="mord mathdefault mtight">s</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">e</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">s</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.03588em;">g</span><span class="mord mathdefault mtight">n</span><span class="mord mathdefault mtight">a</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span></span></p>
+]]></content>
+      <categories>
+        <category>编程前戏</category>
+      </categories>
+      <tags>
+        <tag>编程前戏</tag>
+      </tags>
+  </entry>
 </search>
