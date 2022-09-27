@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="你好，世界">
-    <meta name="description" content="如果在光束的每个位置上，偏振(电场)矢量指向光束的中心，则光束具有径向偏振特性。
-实际上，使用波片阵列可以获得径向偏振光的近似，比如可以将光束分为八段，每一段的平均偏振态指向光束中心，那么就获得了一个近似的径向偏振光（https://ana">
+    <meta name="keywords" content="遗传算法学习与python实现, 你好，世界">
+    <meta name="description" content="遗传算法的学习记录">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -29,7 +28,7 @@
     </style>
 
 
-    <title>DLX_Blog</title>
+    <title>遗传算法学习与python实现 | DLX_Blog</title>
     <link rel="icon" type="image/png" href="/logo1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -42,10 +41,10 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<meta name="generator" content="Hexo 5.4.2">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="DLX_Blog" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -428,7 +427,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">遗传算法学习与python实现</h1>
                 </div>
             </div>
         </div>
@@ -438,120 +437,35 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-        background-color: rgb(255, 255, 255,0.7);
-        border-radius: 10px;
-        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
-
-    }
-
-    .toc-widget .toc-title {
-        padding: 35px 0 15px 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        padding-bottom: 30px;
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-
-        position: absolute;
-        right: 23.5vw;
-        display: block;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">智能算法</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/" class="post-category">
+                                智能算法
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -560,28 +474,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-28
+                    2022-09-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-04-28
+                    2022-09-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    362
+                    3.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    14 分
                 </div>
                 
 
@@ -604,14 +518,363 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>如果在光束的每个位置上，偏振(电场)矢量指向光束的中心，则光束具有径向偏振特性。</p>
-<p>实际上，使用波片阵列可以获得径向偏振光的近似，比如可以将光束分为八段，每一段的平均偏振态指向光束中心，那么就获得了一个近似的径向偏振光（<a target="_blank" rel="noopener" href="https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/jrs.1953%EF%BC%89">https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/jrs.1953）</a></p>
-<p>利用液晶装置也可以改变光的偏振态，转换为径向偏振光。</p>
-<p>或者利用激光获得任何准直光源进行获取，其中Brewster window被Brewster angle的锥角所取代，这玩意被叫做旋转布儒斯特偏振器（Rotated Brewster Angle Polarizer），1986年就有了</p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Brewster_window.svg/220px-Brewster_window.svg.png" alt="一个布儒斯特窗"></p>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Rotated_Brewster_Polarizer.jpg/1024px-Rotated_Brewster_Polarizer.jpg" alt="旋转布儒斯特偏振器"></p>
-<p>准直光进入该装置后，在双锥处进行两次空气-金属反射，在玻璃筒内进行一次空气-玻璃的布儒斯特角反射，以径向偏振光退出。后来，Kozawa又提出了一个类似的装置。一个相关的概念是方位角偏振，其中偏振矢量与光束切向。如果激光聚焦在双折射材料的光轴上，则径向偏振和方位偏振聚焦在不同的平面上。空间滤波器可用于选择感兴趣的偏振。</p>
-<p>径向偏振光可以产生比普通偏振态更小的光斑，也可以用于捕获小型粒子，制作光镊。</p>
+                <h2 id="1遗传算法算法原理"><a class="markdownIt-Anchor" href="#1遗传算法算法原理"></a> 1.遗传算法，算法原理</h2>
+<p>​       现在我有一个问题，这个问题可以描述为N个点，这些点相互可以计算权值，变更点的组合获得一个目标的最优解，或者已知一些点，需要对这些点的权值进行变动，这些权值在某些计算下可以获得一个目标值，这个目标值有一些最优解。例如，我有ABCD四个城市，我知道或者可以计算任意两个城市的距离，现在我需要计算出一条路径，能够遍历ABCD，使得路径长度最短，这是一个图优化问题，可以通过遗传算法进行解决。或者在一些成像优化问题上，比如相差校正的时候，我需要校正4-11阶相差，我可以使用卷积核来评价校正后的图像，但是4-11阶的相差需要多少权值，我并不清楚，这时候遗传算法就给了一个可行性的方案。或者对于神经网络来说，神经节点的权值需要更换，这种情况就可以简化为上述问题，这就是一些神经网络模型结合遗传算法后，用于更新权值的方式。</p>
+<p>​		遗传算法模拟的是自然界中的种群更替，一定数量的生物在组合或者变异出一些新的形状后，更加有利于当前环境的生存，或者更加不适应当前环境的生存，一代一代的选择将合适的基因变得更多，不适宜的被淘汰，被淘汰与被留下是一个概率问题，瘸腿的角马也可能会留下后代，而一个强壮的角马可能会被狮子捕猎留不下后代。当然被淘汰了也没事，只要代数足够多，这个角马的性状是可能会重新出现的。</p>
+<p>​		结合平时看的动物频道，龙女之声这些，来理解遗传算法就简单的多了。下面给一些基本概念：</p>
+<h4 id="1种群"><a class="markdownIt-Anchor" href="#1种群"></a> 1.种群：</h4>
+<p>​			包含大量个体的集合称为种群，进化的单位不是个体，而是一个种群。</p>
+<h4 id="2个体"><a class="markdownIt-Anchor" href="#2个体"></a> 2.个体</h4>
+<p>​			一个个体拥有一个染色体，比如我需要对ABCD四个城市进行排序，那么我将四个城市编号为0 1 2 3，那么0 1 2 3这个组合可以看作一个个体，0 2 3 1也可以看作一个个体，通常在开始的时候使用随即顺序来生成大量个体。</p>
+<h4 id="3适应度"><a class="markdownIt-Anchor" href="#3适应度"></a> 3.适应度</h4>
+<p>​			适应度决定了优化的方向，根据不同的需求选取适应度：</p>
+<p>​            例如：针对最短路径问题，选取路径长度之和的倒数为适应度，适应度越大路程越近</p>
+<p>​                       针对清晰度，选取横向纵向边缘卷积后图像之和作为适应度，适应度越大图像越清晰</p>
+<h4 id="4交叉"><a class="markdownIt-Anchor" href="#4交叉"></a> 4.交叉</h4>
+<p>​		  交叉是指染色体中基因的重新交叉组合，交叉不涉及变异，交叉有如下方式：</p>
+<p>​         **a:**简单交叉</p>
+<p>​               随机选择交叉位点：  p1: 1 2 |3 4 5 6| 7 8 9                  p2: 5 4 |6 9 2 1 |7 8 3</p>
+<p>​                             简单交叉：          12 6921 789            54 3456 783</p>
+<p>​                             交换重复基因： c1:35 6921 784    c2: 29 3456 781</p>
+<p>​          <strong>b:</strong> ox交叉</p>
+<p>​             随机选择交叉位点：  p1: 1 2 |3 4 5 6| 7 8 9                  p2: 5 4 |6 9 2 1 |7 8 3</p>
+<p>​                             找位置补上：        c1:  3 4 6921 578                    c2:  9  2 | 3 4 5 6 | 1 7 8 9</p>
+<p>​		<strong>c:</strong>  pbx交叉</p>
+<p>​                         随机选择交叉位点：  p1: 1 |2 |3 4 |5 6| 7 8 |9 |                 p2: 5 4 |6 9 2 1 |7 8 3</p>
+<p>​                             从p2随机拿出5  6 9 2，放在p1的位置，即2   5   6 9，然后按照顺序插入p2剩余的数字，即</p>
+<p>​                                  4 2 3 9 5 6 7 8 9</p>
+<p>​          <strong>d:</strong> cx交叉：</p>
+<p>​                                         p1: 1  2 3 4 5 6 7 8 9</p>
+<p>​                                         p2: 5  4 6 9 2 1 7 8 3</p>
+<p>​          父代中有：1-&gt;5-&gt;2-&gt;4-&gt;9-&gt;3-&gt;6-&gt;1</p>
+<p>​          排序为1 2 3 4 5 6 9，按照p1间隔为1 2 3 4 5 6| | |9|</p>
+<p>​                                                                       5 4 6 9 2 1 7 8 3</p>
+<p>​          c1为1 2 3 4 5 6 7 8 9，同理得到c2</p>
+<p>​          <strong>e:</strong> sec交叉</p>
+<p>​                                         p1: 1 2 3 4 5 6 7 8 9</p>
+<p>​                                         p2: 3 4 9 7 8 5 2 1 6</p>
+<p>​                    找出随机片段： 4 5 6 7=&gt;按照p2进行排列为：4 7 5 6</p>
+<p>​                    c1: 1 2 3 4 7 5 6 8 9</p>
+<p>​                    c2: 3 4 9 5 8 6 2 1 7</p>
+<h4 id="5染色体编码与解码"><a class="markdownIt-Anchor" href="#5染色体编码与解码"></a> 5.染色体编码与解码</h4>
+<p>​			对于一些问题，需要对基因进行映射，常见的编码方式有<strong>二进制编码、格雷码、浮点数编码、各参数级联编码、多参数交叉编码</strong> ，这里不一一举例，主要给出一下二进制编码，这种东西用的时候再查即可。</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi><mo>∈</mo><mo stretchy="false">[</mo><mn>2</mn><mo separator="true">,</mo><mn>4</mn><mo stretchy="false">]</mo><mspace linebreak="newline"></mspace><mi mathvariant="normal">使</mi><mi mathvariant="normal">用</mi><mn>5</mn><mi mathvariant="normal">位</mi><mi mathvariant="normal">置</mi><mi mathvariant="normal">二</mi><mi mathvariant="normal">进</mi><mi mathvariant="normal">制</mi><mi mathvariant="normal">编</mi><mi mathvariant="normal">码</mi><mspace linebreak="newline"></mspace><mn>00000</mn><mi mathvariant="normal">、</mi><mn>00001</mn><mi mathvariant="normal">、</mi><mn>00010</mn><mi mathvariant="normal">、</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mn>10101</mn><mspace linebreak="newline"></mspace><mn>10101</mn><mi mathvariant="normal">对</mi><mi mathvariant="normal">应</mi><mi mathvariant="normal">十</mi><mi mathvariant="normal">进</mi><mi mathvariant="normal">制</mi><mi mathvariant="normal">为</mi><mi mathvariant="normal">：</mi><mn>1</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>0</mn><mo>+</mo><mn>16</mn><mo>=</mo><mn>21</mn><mspace linebreak="newline"></mspace><mi mathvariant="normal">对</mi><mi mathvariant="normal">应</mi><mi mathvariant="normal">编</mi><mi mathvariant="normal">码</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">字</mi><mi mathvariant="normal">为</mi><mi mathvariant="normal">：</mi><mn>2</mn><mo>+</mo><mn>21</mn><mfrac><mrow><mn>4</mn><mo>−</mo><mn>2</mn></mrow><mrow><msup><mn>2</mn><mn>5</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>3.3548</mn></mrow><annotation encoding="application/x-tex">X\in[2,4] \\
+使用5位置二进制编码\\
+00000、00001、00010、...10101 \\
+10101 对应十进制为：1+0+4+0+16=21\\
+对应编码数字为：2+21\frac{4-2}{2^5-1}=3.3548
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mclose">]</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord cjk_fallback">使</span><span class="mord cjk_fallback">用</span><span class="mord">5</span><span class="mord cjk_fallback">位</span><span class="mord cjk_fallback">置</span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">进</span><span class="mord cjk_fallback">制</span><span class="mord cjk_fallback">编</span><span class="mord cjk_fallback">码</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord cjk_fallback">、</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">1</span><span class="mord cjk_fallback">、</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span><span class="mord">1</span><span class="mord">0</span><span class="mord cjk_fallback">、</span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mord">1</span><span class="mord">0</span><span class="mord">1</span><span class="mord">0</span><span class="mord">1</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">1</span><span class="mord">0</span><span class="mord">1</span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">应</span><span class="mord cjk_fallback">十</span><span class="mord cjk_fallback">进</span><span class="mord cjk_fallback">制</span><span class="mord cjk_fallback">为</span><span class="mord cjk_fallback">：</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">6</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord">1</span></span><span class="mspace newline"></span><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord cjk_fallback">对</span><span class="mord cjk_fallback">应</span><span class="mord cjk_fallback">编</span><span class="mord cjk_fallback">码</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">字</span><span class="mord cjk_fallback">为</span><span class="mord cjk_fallback">：</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.09077em;vertical-align:-0.7693300000000001em;"></span><span class="mord">2</span><span class="mord">1</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">4</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693300000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">.</span><span class="mord">3</span><span class="mord">5</span><span class="mord">4</span><span class="mord">8</span></span></span></span></span></p>
+<h4 id="6变异"><a class="markdownIt-Anchor" href="#6变异"></a> 6.变异：</h4>
+<p>​			变异的目的是出现一些意料之外的基因，很多情况下仅靠排列组合来获得最优解是异想天开，比如对于波前矫正来说，仅仅通过数字排列组合根本出不来新东西，就需要对权值进行变异。</p>
+<p>​			变异不能太快，即变异率不能太大，不然优秀的基因几代可能就变异没了。</p>
+<p>​			随机指定需要变异的点位，然后把这个地方的数字在定义域类随机变成一个值，完成一次变异。</p>
+<h4 id="7-选择"><a class="markdownIt-Anchor" href="#7-选择"></a> <strong>7. 选择：</strong></h4>
+<p>​			常用轮盘赌法，适应度高的个体存活下来的概率更大，轮盘赌更像是一块按概率分割的靶子，然后向靶子上扔飞镖，看看哪个分割区域落得飞镖多。</p>
+<p>​</p>
+<h2 id="2算法模块与实现"><a class="markdownIt-Anchor" href="#2算法模块与实现"></a> 2.算法模块与实现</h2>
+<pre class="language-python" data-language="python"><code class="language-python">"""本代码用于模拟遗传算法"""
+"""
+遗传算法需要：
+种群大小
+遗传代数
+交叉概率
+编译概率
+"""
+import numpy as np
+
+class Gen:
+
+    def __init__(self,code,code_style,nind,maxgen,pc,pm,ggap):
+        """这里是遗传算法需要的参数"""
+        self.code=code
+        #传入需要计算的对象
+        self.code_style=code_style
+        #设置编码方法
+        self.nind=nind
+        #设置种群大小
+        self.maxgen=maxgen
+        #设置遗传代数
+        """选择合适的个体后进行交叉，不一定所有基因能找到对象，给一个概率"""
+        self.pc=pc
+        #交叉概率
+        """变异概率,遗传后代出现不一样的概率"""
+        self.pm=pm
+        #变异概率，一般较小
+        self.ggap=ggap
+        #代沟，选择下个种群的大小
+        self.chorm=0
+
+
+    def init_group(self):
+        """初始化种群,就是得到100个个体"""
+        long_gene=self.code.shape[0]
+        """给出基因的长度"""
+        #print(self.long_gene)
+        chorm=np.zeros([self.nind,long_gene])
+        """chorm用于储存种群"""
+        for i in np.arange(self.nind):
+            chorm[i,:]= np.random.permutation(long_gene)
+            """随机排列组合"""
+        self.chorm=chorm
+        """chorm为初始种群"""
+        #print(chorm)
+        #return chorm
+
+    def optimize(self):
+        """优化部分"""
+        gen=0
+        dis=distance(self.code)
+        #print(self.chorm)
+        #len_road=path_lengeth(dis,self.chorm)
+        #return len_road
+        chorm=self.chorm
+        """设置代数"""
+        while gen&lt;self.maxgen:
+            """当遗传代数小于预定代数的时候循环"""
+            """计算适宜度，适者生存，对于优化路线问题了，适宜度就是距离了"""
+            len_road=path_lengeth(dis, chorm)
+            """计算路线长度"""
+            fitv=fitness(len_road) #适应率，越大越好
+            #print('fitv:',fitv)
+            """选择符合要求的部分，剔除不需要的"""
+            selch=select(chorm,fitv,self.ggap)
+            #print("1",selch)
+            """对基因进行交叉"""
+            selch=recombin(selch,self.pc)
+            #print("2",selch)
+            """输入轮盘赌后选中的个体与交叉概率"""
+            selch=variation(selch,self.pm)
+            """接下来进行一波变异,输入交叉后的数组和变异概率"""
+            #print("3",selch)
+            #print(self.chorm.shape)
+            selch=reverse(selch,dis)
+            """逆操作"""
+            chorm=reins(chorm,selch,len_road)
+            """重新插入,上一轮的种群，这一轮种群，路径长度（这里的适应度）"""
+            gen+=1
+        return chorm,dis
+
+
+
+
+"""调用函数定义"""
+        
+
+def distance(matr):
+    """点坐标矩阵边的距离"""
+    m,n=matr.shape
+    dis=np.zeros([m,m])
+    for i in np.arange(m):
+        for j in np.arange(m):
+            dis[i,j]=np.sqrt((matr[i,0]-matr[j,0])**2+(matr[i,1]-matr[j,1])**2)
+    return dis
+
+def path_lengeth(dis,chorm):
+    """计算路径长度，也就是适应度"""
+    #print(chorm.shape[0])
+    len_road=np.zeros([chorm.shape[0],1])
+    #print(len_road)
+    for i in np.arange(chorm.shape[0]):
+        for j in np.arange(chorm.shape[1]):
+            line=chorm[i,:]
+            if j&lt;=chorm.shape[1]-2:
+                len_road[i]+=dis[np.uint8(line[j]),np.uint8(line[j+1])]
+            else:
+                len_road[i]+=dis[np.uint8(line[0]),np.uint8(line[j])]
+    
+    return len_road
+
+def fitness(dis):
+    """计算适应率"""
+    fitv=1/dis
+    return fitv
+
+def select(chrom,fitv,ggap):
+    """选择函数:输入图矩阵，适应度，代沟比例
+    输出被选择的个体
+    选择方法为轮盘读
+    """
+    nind=chrom.shape[0]
+    nsel=max(np.ceil(nind*ggap),2)
+    """至少取两个样本"""
+    newchrlx=sus(fitv,nsel)
+
+    """轮盘赌代码实现"""
+    selch=chrom[newchrlx,:]
+
+    """选出相应的行送回去"""
+    return selch
+    #轮盘赌算法
+
+
+
+def sus(fitv,nsel):
+    """轮盘赌算法"""
+    """输入
+    适应度
+    取得个体数量
+    输出：
+    被选中个体的索引号"""
+    nind,ans=fitv.shape#种群数量
+    """计算累积概率"""
+    cumfit=np.cumsum(fitv)
+    cumfit=cumfit.reshape(nind,1)
+    #100*1
+    #累积和
+    nsel=np.uint8(nsel)
+    mat=np.linspace(0,nsel-1,nsel)
+    mat=mat.reshape(nsel,1)
+    trails=cumfit[nind-1]/nsel*(np.random.rand()+mat)
+    #产生随机数看落在哪个区间,90*1
+    mf=np.tile(cumfit,nsel)
+    #print(mf.shape)
+    mt=np.tile(trails,nind).T#计算mt落在mf区间里面的数量与对应的标号
+    #print(mt.shape)
+    #生成的随机数
+    #扩展矩阵
+    ze=np.zeros([1,nsel])
+    tt=np.vstack((ze,mf[0:nind-1,:]))##这一行有问题
+    aa,bb=np.where((tt&lt;=mt)&amp;(mt&lt;mf))
+
+    """注意这个傻逼括号一定要"""
+    #print('a',aa)
+    #tt=tt.reshape(nind,nsel)
+    #print(cc)
+    """这里输出的cc就是保留的行数"""
+    """这里获取随机区间内的坐标索引"""
+    al=np.random.permutation(aa)
+    #print(al)
+    """随机打乱输出的行，用于给下一个"，打乱便于交叉"""
+    return al
+
+
+def recombin(selch,pc):
+    """对pc概率的个体进行交叉"""
+    """先找出需要被交叉的个体"""
+    nsel=selch.shape[0]
+    for i in range(0,nsel-1-np.mod(nsel-1,2),2):
+        if pc&gt;=np.random.rand():
+            """使用概率"""
+            selch[i,:],selch[i+1,:]=intercross(selch[i,:],selch[i+1,:])
+    return selch
+
+    
+    """交叉方法"""
+def intercross(a,b):
+    len=a.shape[0]
+    r1=np.random.randint(0,len,1)
+    r2=np.random.randint(0,len,1)
+    """生成随机数"""
+    if r1!=r2:
+        a0=a.copy()
+        b0=b.copy()
+        r=np.vstack((r1,r2))
+        s=r.min()
+        e=r.max()
+        #s=np.uint8(s)
+        #e=np.uint8(e)
+        for i in range(s,e):
+            a1= a.copy()
+            b1= b.copy()
+            a[i]=b0[i]
+            b[i]=a0[i]
+            x = np.where(a==a[i])
+            y = np.where(b==b[i])
+            x = np.setdiff1d(x, i)
+            y = np.setdiff1d(y, i)
+            #剔除相同的地方
+            if x.size !=0:
+                a[x]=a1[i]
+            if y.size !=0:
+                b[y]=b1[i]
+    return a,b
+
+def variation(selch,pm):
+    """输入待变化矩阵和"""
+    mm,nn=selch.shape[0],selch.shape[1]
+    for i in range(mm):
+        if pm&gt;=np.random.rand():
+            al=np.random.permutation(nn)
+            selch[i,al[0]],selch[i,al[1]]=selch[i,al[1]],selch[i,al[0]]
+            """修改这里"""
+    return selch
+
+def reverse(selch,dis):
+    mm,nn=selch.shape[0],selch.shape[1]
+    objv=path_lengeth(dis,selch)
+    selch1=selch.copy()
+    for i in range(mm):
+        r1 = np.random.randint(0, nn , 1)
+        r2 = np.random.randint(0, nn , 1)
+        r = np.vstack((r1,r2))
+        s=r.min()
+        e=r.max()
+        t=np.linspace(s,e,e-s+1)
+        t=np.uint8(t)
+        t1=np.flipud(t)
+        selch1[i,t]=selch1[i,t1]
+        """增加一个selch1交换se的步骤"""
+    objv1=path_lengeth(dis,selch1)
+    row,col=np.where(objv1&lt;objv)
+    """找出路径更小的排列进行替换"""
+    selch[row,:]=selch1[row,:]
+    return selch
+def reins(chrom,selch,objv):
+    """选取十个适应度最好的插回selch中，构成新的chrom"""
+
+    index = np.argpartition(objv.ravel(), 10)[:10]
+    #print("sss:",index)
+    tt=chrom[index,:]
+    chrom1=np.vstack((tt,selch))
+    return chrom1
+
+
+
+
+if __name__ == '__main__':
+    #x=np.random.rand(10,2)*10
+    #print(x)
+    """待处理矩阵"""
+    """x=np.array([[9.10893551, 0.94758485],
+ [3.19123719, 7.10030758],
+ [8.99780653, 8.46583976],
+ [8.59168471 ,8.16506294],
+ [8.41959546 ,4.50936991],
+ [3.16840804, 2.93466796],
+ [6.2796096 , 0.58816662],
+ [1.80523243 ,1.61825121],
+ [7.3146517  ,5.02325565],
+ [7.20971725 ,4.16120105]])"""
+
+    x =np.array( [[16.47, 96.10]
+         ,[16.47, 94.44]
+         ,[20.09, 92.54]
+         ,[22.39, 93.37]
+         ,[25.23, 97.24],
+          [22.00, 96.05],
+         [20.47, 97.02],
+         [17.20, 96.29],
+         [16.30, 97.38],
+         [14.05, 98.12],
+         [16.53, 97.38],
+         [21.52, 95.59],
+         [19.41, 97.13],
+         [20.09, 92.55]])
+    dis=distance(x)
+    #print(dis)
+    x_size=x.shape
+    heredity=Gen(x,1,100,400,0.9,0.05,0.9)
+
+    """def __init__(self, code, code_style, nind, maxgen, pc, pm, ggap):"""
+    heredity.init_group()
+
+    chrom,dis=heredity.optimize()
+    len_road = path_lengeth(dis, chrom)
+    #print(len_road)
+    index = np.argpartition(len_road.ravel(), 1)[:1]
+    print("路径为：",chrom[index,:],"距离为：",len_road[index,:])
+    #print(heredity.init_group())
+</code></pre>
 
                 
             </div>
@@ -628,7 +891,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">守岁</a>
+                    <a href="/about" rel="external nofollow noreferrer">dlx</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -638,7 +901,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ussofol.github.io/2022/04/28/radial-polarization/">http://ussofol.github.io/2022/04/28/radial-polarization/</a>
+                    <a href="http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/">http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -651,7 +914,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">守岁</a>
+                    <a href="/about" target="_blank">dlx</a>
                     !
                 </span>
             </div>
@@ -675,7 +938,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">智能算法</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1117,31 +1384,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/28/an-py/">
+                <a href="/2022/09/20/ji-qi-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="anaconda常用命令与pycharm">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="深度学习pytorch基础入门">
                         
-                        <span class="card-title">anaconda常用命令与pycharm</span>
+                        <span class="card-title">深度学习pytorch基础入门</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这类小东西就是学了又忘忘了又学
+                            这里是基础的一些知识
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-20
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%89%8D%E6%88%8F/" class="post-category">
-                                    编程前戏
+                            <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    深度学习
                                 </a>
                             
                             
@@ -1151,8 +1418,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%BC%96%E7%A8%8B%E5%89%8D%E6%88%8F/">
-                        <span class="chip bg-color">编程前戏</span>
+                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">深度学习</span>
                     </a>
                     
                 </div>
@@ -1234,87 +1501,6 @@
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
     
 
 </main>
@@ -1392,7 +1578,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">2.7k</span>
+                        class="white-color">7.8k</span>
             
             
             
