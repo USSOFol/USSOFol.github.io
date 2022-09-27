@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="对光斑点阵进行提取代码与解释12, 你好，世界">
-    <meta name="description" content="可以拿来数星星">
+    <meta name="keywords" content="线性神经网络学习, 你好，世界">
+    <meta name="description" content="深度学习的学习记录">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -28,7 +28,7 @@
     </style>
 
 
-    <title>对光斑点阵进行提取代码与解释12 | DLX_Blog</title>
+    <title>线性神经网络学习 | DLX_Blog</title>
     <link rel="icon" type="image/png" href="/logo1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -41,9 +41,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2">
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="DLX_Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="DLX_Blog" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -422,12 +422,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">对光斑点阵进行提取代码与解释12</h1>
+                    <h1 class="description center-align post-title">线性神经网络学习</h1>
                 </div>
             </div>
         </div>
@@ -449,16 +449,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/matlab/">
-                                <span class="chip bg-color">matlab</span>
+                            <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">深度学习</span>
                             </a>
                         
-                            <a href="/tags/SHS/">
-                                <span class="chip bg-color">SHS</span>
-                            </a>
-                        
-                            <a href="/tags/AO/">
-                                <span class="chip bg-color">AO</span>
+                            <a href="/tags/%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">线性神经网络</span>
                             </a>
                         
                     </div>
@@ -469,8 +465,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%85%89%E6%96%91%E5%88%86%E5%89%B2/" class="post-category">
-                                光斑分割
+                            <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                深度学习
                             </a>
                         
                     </div>
@@ -482,7 +478,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-15
+                    2022-09-27
                 </div>
                 
 
@@ -496,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    90
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    1 分
                 </div>
                 
 
@@ -526,160 +522,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="1代码"><a class="markdownIt-Anchor" href="#1代码"></a> 1.代码</h2>
-<p>代码先放这</p>
-<pre class="language-matlab" data-language="matlab"><code class="language-matlab">function  shwfs_make_coarse_grid(img)
-sh_flat = img;          %加载成像点图
-% tunable parameters                 %加载需要使用的参数
-thresh = 0.08; %二值化用阈值 0.08例子代码
-npixsmall = 8;      %可以认为是噪声光斑的尺寸阈值    
-strel_rad = 8;      %粗网格半径
-radius =10;%粗网格半径传递于radius=16
-%% thresh = graythresh(sh_flat);
-%这里的算法可以改进为自适应阈值，使用灰度统计后进行
-    bw = im2bw(sh_flat, thresh);             %不减背景图像后二值，阈值0.08
-% 获取二值图像并显示
-sfigure(3);
-imshow(bw);
-title('binary image');
-%% remove small objects
-bw = bwareaopen(bw, npixsmall);%matlab自带函数bwareaopen()，定义尺寸后自动消除小于此尺寸物体，注意输入要为二值
-% sfigure(4);
-% imshow(bw);
-% title('remove small objects 1');
-%% remove edges
-% strel形态学处理函数
-% 创建圆盘半径8
-se = strel('disk',strel_rad);
-bw = imclose(bw, se);%闭运算
-% sfigure(5);
-% imshow(bw);
-% title('remove small objects 2');
-%%
-cc = bwconncomp(bw, 4);%找连通分量
-s = regionprops(cc, 'Centroid');%检测图像区域的属性，寻找连通分量的质心
-nspots = length(s);%计数，质心个数
-hold on;
-for k = 1:nspots
-    c = s(k).Centroid;    %获取质心坐标后绘制源泉
-    plot(c(1), c(2), 'ro');
-end
-squaregrid = zeros(nspots, 4);%这里获取一个质心点数量*4的0矩阵
-sfigure(6);
-imshow(sh_flat);
-hold on;
-for k = 1:nspots
-    c = s(k).Centroid;
-    plot(c(1), c(2), 'ro');%再画一遍看看效果
-end
-%下面的for函数定位画框，顺带画个框
-for k=1:nspots
-    c = s(k).Centroid;
-    c = round(c);%取整
-    minx = c(1) - radius;
-    maxx = c(1) + radius;
-    miny = c(2) - radius;
-    maxy = c(2) + radius;
-    box = [minx, maxx, miny, maxy];%为一个20*20的框
-    squaregrid(k, :) = box;%每一行为一个矩形
-    sfigure(6);
-    hold on;
-    rectangle('Position', [minx, miny, maxx-minx+1, maxy-miny+1], ...
-        'LineWidth', 2, 'EdgeColor', 'b');%绘制矩形框
-    sfigure(15);%函数用于重置
-    % image is height times width!
-    box(3)
-    box(4)
-    box(1)
-    box(2)
-    subsfigure = sh_flat(box(3):box(4), box(1):box(2));
-    imshow(subsfigure);%切割出每个小块
-    pause(0.01);
-end
- nspots
-% [minx, miny, maxx-minx+1, maxy-miny+1]
-% image plot coords
-squaregrid%存储点图坐标点进入结构体
-end</code></pre>
-<h2 id="2代码分段讲解"><a class="markdownIt-Anchor" href="#2代码分段讲解"></a> 2.代码分段讲解</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/test.png" alt="光斑点阵图"></p>
-<p>这图先拿来讲解，顺带讲讲开运算闭运算连通分量的数学原理</p>
-<pre class="language-matlab" data-language="matlab"><code class="language-matlab">sh_flat = img;           %加载上面那个图
-%% tunable parameters                 %加载需要使用的参数
-thresh = 0.08;      %二值化用阈值 0.08例子代码
-npixsmall = 8;      %可以认为是噪声光斑的尺寸阈值    
-strel_rad = 8;      %粗网格半径
-radius =10;%粗网格半径传递于radius=16
-% 记住这些参数，都有用
-%% thresh = graythresh(sh_flat);
-
-%这里的算法可以改进为自适应阈值，使用灰度统计后进行
-bw = im2bw(sh_flat, thresh);             %不减背景图像后二值，阈值0.08
-% 获取二值图像并显示
-sfigure(3);
-imshow(bw);
-title('binary image');</code></pre>
-<p>计算完之后的二值图长下面那个样子：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/erzhi.png" alt="我是binary"></p>
-<pre class="language-matlab" data-language="matlab"><code class="language-matlab">bw = bwareaopen(bw, npixsmall);%matlab自带函数bwareaopen()，定义尺寸后自动消除小于此尺寸物体，注意输入要为二值,这下就能知道npixsmall的用途了</code></pre>
-<p>这里去除掉一部分过于小的点，能够去除一部分噪声，但是也有可能去除掉一些微弱的信号</p>
-<pre class="language-matlab" data-language="matlab"><code class="language-matlab">%% remove edges
-% strel形态学处理函数
-% 创建圆盘半径8
-se = strel('disk',strel_rad); %创建一个指定半径strel_rad的平面圆盘形的结构元素
-bw = imclose(bw, se);%闭运算，使用se对bw进行腐蚀后，再用se进行膨胀后结果
- sfigure(5);
- imshow(bw);
- title('remove small objects 2');
-%%
-cc = bwconncomp(bw, 4);%找连通分量
-s = regionprops(cc, 'Centroid');%检测图像区域的属性，寻找连通分量的质心
-nspots = length(s);%计数，质心个数</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/chuli1.png" alt="直接获取质心"></p>
-<img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/闭运算.png" alt="原图" style="zoom:40%;">
-<pre class="language-none"><code class="language-none">for k=1:nspots
-    c = s(k).Centroid;
-    c = round(c);%取整
-    minx = c(1) - radius;
-    maxx = c(1) + radius;
-    miny = c(2) - radius;
-    maxy = c(2) + radius;
-    box = [minx, maxx, miny, maxy];%为一个20*20的框
-    squaregrid(k, :) = box;%每一行为一个矩形
-    sfigure(6);
-    hold on;
-    rectangle('Position', [minx, miny, maxx-minx+1, maxy-miny+1], ...
-        'LineWidth', 2, 'EdgeColor', 'b');%绘制矩形框
-    sfigure(15);%函数用于重置
-    % image is height times width!
-    box(3)
-    box(4)
-    box(1)
-    box(2)
-    subsfigure = sh_flat(box(3):box(4), box(1):box(2));
-    imshow(subsfigure);%切割出每个小块
-    pause(0.01);
-end</code></pre>
-<p>对原图进行分割，按照联通分量确定的质心</p>
-<img src="https://cdn.jsdelivr.net/gh/USSOFol/pic/img/框.png" alt="效果图" style="zoom:50%;">
-<p>注意这个输出</p>
-<p>下面是矩阵框的x方向像素范围和y方向像素范围的偏移由于闭运算被消减了。</p>
-<p>​    4    24     9    29<br>
-​     4    24    79    99<br>
-​     4    24   150   170<br>
-​     4    24   220   240<br>
-​    74    94     9    29<br>
-​    74    94    79    99<br>
-​    74    94   150   170<br>
-​    74    94   220   240<br>
-145   165     9    29<br>
-145   165    79    99<br>
-145   165   150   170<br>
-145   165   220   240<br>
-215   235     9    29<br>
-215   235    79    99<br>
-215   235   150   170<br>
-216   236   221   241</p>
+                <h3 id="1数学原理"><a class="markdownIt-Anchor" href="#1数学原理"></a> 1.数学原理：</h3>
+<h4 id="a线性模型"><a class="markdownIt-Anchor" href="#a线性模型"></a> a.线性模型</h4>
+<p>​		线性假设是指目标可以表示为特征的加权和，如同式子<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>w</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>w</mi><mn>2</mn></msub><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>w</mi><mn>3</mn></msub><msub><mi>x</mi><mn>3</mn></msub><mo>+</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>+</mo><msub><mi>w</mi><mi>n</mi></msub><msub><mi>x</mi><mi>n</mi></msub><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">y=w_1x_1+w_2x_2+w_3x_3+...+w_nx_n+b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.02691em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> 的形式，使用矩阵点积进行简洁表示：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow></mrow><annotation encoding="application/x-tex">
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"></span></span></span></p>
+<p>b.矩阵求导公式</p>
+<h3 id="2实现步骤"><a class="markdownIt-Anchor" href="#2实现步骤"></a> 2.实现步骤</h3>
+<h3 id="3原理实现"><a class="markdownIt-Anchor" href="#3原理实现"></a> 3.原理实现</h3>
+<h3 id="4调包实现"><a class="markdownIt-Anchor" href="#4调包实现"></a> 4.调包实现</h3>
 
                 
             </div>
@@ -706,7 +557,7 @@ end</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ussofol.github.io/2022/04/15/shi-xian-dui-guang-ban-zhen-lie-de-huo-qu-fu-ben/">http://ussofol.github.io/2022/04/15/shi-xian-dui-guang-ban-zhen-lie-de-huo-qu-fu-ben/</a>
+                    <a href="http://ussofol.github.io/2022/09/27/xian-xing-shen-jing-wang-luo/">http://ussofol.github.io/2022/09/27/xian-xing-shen-jing-wang-luo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -744,16 +595,12 @@ end</code></pre>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/matlab/">
-                                    <span class="chip bg-color">matlab</span>
+                                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">深度学习</span>
                                 </a>
                             
-                                <a href="/tags/SHS/">
-                                    <span class="chip bg-color">SHS</span>
-                                </a>
-                            
-                                <a href="/tags/AO/">
-                                    <span class="chip bg-color">AO</span>
+                                <a href="/tags/%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">线性神经网络</span>
                                 </a>
                             
                         </div>
@@ -1193,46 +1040,52 @@ end</code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/04/19/zao-sheng-zeng-jia/">
+                <a href="/2022/09/27/xian-xing-shen-jing-wang-luo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="如何给图像添加噪声">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="线性神经网络学习">
                         
-                        <span class="card-title">如何给图像添加噪声</span>
+                        <span class="card-title">线性神经网络学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            给图像添加噪声用于验证图像处理滤波性能，这里是如何添加噪声
+                            深度学习的学习记录
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" class="post-category">
-                                    图像处理
+                            <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    深度学习
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">
-                        <span class="chip bg-color">图像处理</span>
+                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">深度学习</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">
+                        <span class="chip bg-color">线性神经网络</span>
                     </a>
                     
                 </div>
@@ -1246,31 +1099,31 @@ end</code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/15/shi-xian-dui-guang-ban-zhen-lie-de-huo-qu/">
+                <a href="/2022/09/22/xian-xing-fen-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="对光斑点阵进行提取代码与解释">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="线性分类">
                         
-                        <span class="card-title">对光斑点阵进行提取代码与解释</span>
+                        <span class="card-title">线性分类</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            可以拿来数星星
+                            分类
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%85%89%E6%96%91%E5%88%86%E5%89%B2/" class="post-category">
-                                    光斑分割
+                            <a href="/categories/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/" class="post-category">
+                                    智能算法
                                 </a>
                             
                             
@@ -1280,16 +1133,12 @@ end</code></pre>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/matlab/">
-                        <span class="chip bg-color">matlab</span>
+                    <a href="/tags/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">智能算法</span>
                     </a>
                     
-                    <a href="/tags/SHS/">
-                        <span class="chip bg-color">SHS</span>
-                    </a>
-                    
-                    <a href="/tags/AO/">
-                        <span class="chip bg-color">AO</span>
+                    <a href="/tags/%E7%BA%BF%E6%80%A7%E5%88%86%E7%B1%BB/">
+                        <span class="chip bg-color">线性分类</span>
                     </a>
                     
                 </div>
@@ -1399,7 +1248,7 @@ end</code></pre>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">8.9k</span>
+                        class="white-color">8k</span>
             
             
             
