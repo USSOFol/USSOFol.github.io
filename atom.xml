@@ -45,34 +45,6 @@
   </entry>
   
   <entry>
-    <title>线性神经网络学习</title>
-    <link href="http://ussofol.github.io/2022/09/27/xian-xing-shen-jing-wang-luo/"/>
-    <id>http://ussofol.github.io/2022/09/27/xian-xing-shen-jing-wang-luo/</id>
-    <published>2022-09-26T16:00:00.000Z</published>
-    <updated>2022-09-27T14:17:12.630Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
-&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="线性神经网络" scheme="http://ussofol.github.io/tags/%E7%BA%BF%E6%80%A7%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>线性分类</title>
     <link href="http://ussofol.github.io/2022/09/22/xian-xing-fen-lei/"/>
     <id>http://ussofol.github.io/2022/09/22/xian-xing-fen-lei/</id>
@@ -100,32 +72,6 @@
   </entry>
   
   <entry>
-    <title>遗传算法学习与python实现</title>
-    <link href="http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/"/>
-    <id>http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/</id>
-    <published>2022-09-19T16:00:00.000Z</published>
-    <updated>2022-09-20T07:42:55.602Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1遗传算法算法原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1遗传算法算法原理&quot;&gt;&lt;/a&gt; 1.遗传算法，算法原理&lt;/h2&gt;
-&lt;p&gt;​      </summary>
-        
-      
-    
-    
-    
-    <category term="智能算法" scheme="http://ussofol.github.io/categories/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="智能算法" scheme="http://ussofol.github.io/tags/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>深度学习pytorch基础入门</title>
     <link href="http://ussofol.github.io/2022/09/20/ji-qi-xue-xi/"/>
     <id>http://ussofol.github.io/2022/09/20/ji-qi-xue-xi/</id>
@@ -148,6 +94,32 @@
     
     
     <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>遗传算法学习与python实现</title>
+    <link href="http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/"/>
+    <id>http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/</id>
+    <published>2022-09-19T16:00:00.000Z</published>
+    <updated>2022-09-20T07:42:55.602Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1遗传算法算法原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1遗传算法算法原理&quot;&gt;&lt;/a&gt; 1.遗传算法，算法原理&lt;/h2&gt;
+&lt;p&gt;​      </summary>
+        
+      
+    
+    
+    
+    <category term="智能算法" scheme="http://ussofol.github.io/categories/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="智能算法" scheme="http://ussofol.github.io/tags/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
