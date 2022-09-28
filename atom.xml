@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-09-27T14:17:12.630Z</updated>
+  <updated>2022-09-28T03:23:15.790Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性神经网络</title>
+    <link href="http://ussofol.github.io/2022/09/28/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji-fu-ben/"/>
+    <id>http://ussofol.github.io/2022/09/28/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji-fu-ben/</id>
+    <published>2022-09-27T16:00:00.000Z</published>
+    <updated>2022-09-28T03:23:15.790Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
+&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>线性神经网络学习</title>
@@ -237,34 +265,6 @@
     <category term="SHS" scheme="http://ussofol.github.io/tags/SHS/"/>
     
     <category term="AO" scheme="http://ussofol.github.io/tags/AO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线性神经网络</title>
-    <link href="http://ussofol.github.io/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji-fu-ben/"/>
-    <id>http://ussofol.github.io/2022/04/12/shi-yong-zhi-jie-bo-qian-chuan-gan-huo-qu-shen-jing-xi-bao-cheng-xiang-bi-ji-fu-ben/</id>
-    <published>2022-04-11T16:00:00.000Z</published>
-    <updated>2022-09-27T14:17:14.234Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
-&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="自适应光学技术" scheme="http://ussofol.github.io/categories/%E8%87%AA%E9%80%82%E5%BA%94%E5%85%89%E5%AD%A6%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="matlab" scheme="http://ussofol.github.io/tags/matlab/"/>
-    
-    <category term="SHS" scheme="http://ussofol.github.io/tags/SHS/"/>
     
   </entry>
   
