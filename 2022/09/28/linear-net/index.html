@@ -492,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    7 分
                 </div>
                 
 
@@ -566,7 +566,7 @@ import time
 import numpy as np
 import torch
 from d2l import torch as d2l
-import rando</code></pre>
+import random</code></pre>
 <p>生成需要被线性拟合的样本</p>
 <pre class="language-python" data-language="python"><code class="language-python">def synthetic_data(w,b,num_example):
     """y=w.T*x+b+噪声，用这个功能获取input"""
@@ -587,7 +587,20 @@ feature,labels=synthetic_data(true_w,true_b,1000)</code></pre>
 <pre class="language-python" data-language="python"><code class="language-python">"""初始化模型参数"""
 w=torch.normal(0,0.01,size=(2,1),requires_grad=True)
 b=torch.zeros(1,requires_grad=True)
-"""这是需要被计算的w，b的随机初始值"""</code></pre>
+"""这是需要被计算的w，b的随机初始值"""
+"""初始化参数"""
+lr=0.03 #学习率
+num_epochs=3  #代码周期
+net =linreg
+loss=loss</code></pre>
+<p>定义net，线性回归就是一个简单的模拟神经元，输入加权后得到一个输出</p>
+<pre class="language-python" data-language="python"><code class="language-python">def linreg(x,w,b):
+    """定义线性回归模型"""
+    return torch.matmul(x,w)+b</code></pre>
+<p>loss函数：</p>
+<pre class="language-python" data-language="python"><code class="language-python">def loss(y_hat,y):
+    """define loss function"""
+    return (y_hat-y)**2/2</code></pre>
 <p>获取每次进行计算的小批量</p>
 <pre class="language-python" data-language="python"><code class="language-python">def data_item(batch_size,feature,labels):
     """minibatch stochastis gradient descent
@@ -613,7 +626,76 @@ b=torch.zeros(1,requires_grad=True)
         for param in params:#所有的wb按照梯度进行下降
             param -= lr*param.grad/batch_size#[w,b]-grad([w,b])
             param.grad.zero_()</code></pre>
+<p>训练：</p>
+<pre class="language-python" data-language="python"><code class="language-python">"""开始训练"""
+for epoch in range(num_epochs):
+    """训练epoch轮"""
+    for x, y in data_item(batch, feature, labels):
+        """每次随机获取十个样本"""
+        #print(x)
+        #print(y)
+        #print("-------------")
+        l=loss(net(x,w,b),y)
+        l.sum().backward()#计算了损失函数的梯度
+        """反向传播msgd"""
+        sgd([w,b],lr,batch)
+        """输入w,b,学习率，"""
+        #zz+=1
+    """注意下面的都是with里面，with在epoch循环里面"""
+    with torch.no_grad():
+        """如果require_grad打开，会消耗很多资源，这个with下所有的require_grad都将为0"""
+        train_l=loss(net(feature,w,b),labels)
+        print(w,b)
+        print(f'epoch {epoch + 1}, loss {float(train_l.mean()):f}')
+print(w,b)</code></pre>
 <h3 id="4调包实现"><a class="markdownIt-Anchor" href="#4调包实现"></a> 4.调包实现</h3>
+<p>需要的包：</p>
+<pre class="language-python" data-language="python"><code class="language-python">import torch
+from d2l import torch as d2l
+from torch.utils import data
+from torch import nn</code></pre>
+<p>定义初始数据集，和原理实现是一样的</p>
+<pre class="language-python" data-language="python"><code class="language-python">"""定义初始数据集参数来源"""
+true_w=torch.tensor([2,-3.4])
+true_b=4.2
+features,labels=d2l.synthetic_data(true_w,true_b,1000)</code></pre>
+<p>pytorch的数据迭代器</p>
+<pre class="language-python" data-language="python"><code class="language-python">def load_array(data_arrays,batch_size,is_train=True):
+    """构造一个小批量的pytorch数据迭代器"""
+    dataset=data.TensorDataset(*data_arrays)
+    return data.DataLoader(dataset,batch_size,shuffle=is_train)
+"""==============================================================="""
+batch_size=10
+data_iter=load_array((features,labels),batch_size)                  </code></pre>
+<p>定义net</p>
+<pre class="language-python" data-language="python"><code class="language-python">batch_size=10
+data_iter=load_array((features,labels),batch_size</code></pre>
+<p>初始化参数模型：</p>
+<pre class="language-python" data-language="python"><code class="language-python">"""初始化参数模型"""
+net[0].weight.data.normal_(0,0.01)
+net[0].bias.data.fill_(0</code></pre>
+<p>定义损失函数和优化方法</p>
+<pre class="language-python" data-language="python"><code class="language-python">loss=nn.MSELoss()
+trainer = torch.optim.SGD(net.parameters(), lr=0.03)
+"""定义优化方法"""</code></pre>
+<p>开始迭代优化：</p>
+<pre class="language-python" data-language="python"><code class="language-python">num_epochs = 3
+for epoch in range(num_epochs):
+    for X, y in data_iter:
+        l = loss(net(X) ,y)
+        trainer.zero_grad()
+        """梯度清零"""
+        l.backward()
+        """反向传播进行梯度优化"""
+        trainer.step()
+        """更新参数，十分重要"""
+    l = loss(net(features), labels)
+    print(f'epoch {epoch + 1}, loss {l:f}')</code></pre>
+<p>输出：</p>
+<pre class="language-python" data-language="python"><code class="language-python">w = net[0].weight.data
+print('w的估计误差：', true_w - w.reshape(true_w.shape))
+b = net[0].bias.data
+print('b的估计误差：', true_b - b)</code></pre>
 
                 
             </div>
@@ -1331,7 +1413,7 @@ b=torch.zeros(1,requires_grad=True)
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">9k</span>
+                        class="white-color">9.5k</span>
             
             
             
