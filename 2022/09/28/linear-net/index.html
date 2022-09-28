@@ -492,14 +492,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    775
+                    961
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -556,6 +556,37 @@ b_{i+1}=b_{i}-\frac{lr}{batch}\sum{(w_{i}^Tx+b_{i}-y^{(i)})}
 <p>​		注意一个问题，如果被优化的对象较为简单，整个定义域上仅有一个最优值，那这个方法就十分甚至九分的好用，如果有局部最优该怎么办。</p>
 <h3 id="2实现步骤"><a class="markdownIt-Anchor" href="#2实现步骤"></a> 2.实现步骤</h3>
 <h3 id="3原理实现"><a class="markdownIt-Anchor" href="#3原理实现"></a> 3.原理实现</h3>
+<p>导入需要使用的包</p>
+<pre class="language-python" data-language="python"><code class="language-python">"""
+学习线性神经网络的
+"""
+import math
+import time
+import numpy as np
+import torch
+from d2l import torch as d2l
+import rando</code></pre>
+<p>生成需要被线性拟合的样本</p>
+<pre class="language-python" data-language="python"><code class="language-python">def synthetic_data(w,b,num_example):
+    """y=w.T*x+b+噪声，用这个功能获取input"""
+    x=torch.normal(0,1,(num_example,len(w)))
+    #print(x)
+    """正态分布函数，0是期望，1是均值"""
+    y=torch.matmul(x,w)+b
+    #print(y.shape)
+    y+=torch.normal(0,0.01,y.shape)
+    """这里加个噪声"""
+    return x,y
+    """这玩意是行转列""
+    
+true_w=torch.tensor([2,-3.4])
+true_b=4.2
+feature,labels=synthetic_data(true_w,true_b,1000)</code></pre>
+<p>初始化参数模型</p>
+<pre class="language-python" data-language="python"><code class="language-python">"""初始化模型参数"""
+w=torch.normal(0,0.01,size=(2,1),requires_grad=True)
+b=torch.zeros(1,requires_grad=True)
+"""这是需要被计算的w，b的随机初始值"""</code></pre>
 <h3 id="4调包实现"><a class="markdownIt-Anchor" href="#4调包实现"></a> 4.调包实现</h3>
 
                 
@@ -1274,7 +1305,7 @@ b_{i+1}=b_{i}-\frac{lr}{batch}\sum{(w_{i}^Tx+b_{i}-y^{(i)})}
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">8.6k</span>
+                        class="white-color">8.8k</span>
             
             
             
