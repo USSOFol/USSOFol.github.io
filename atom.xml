@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-09-28T12:17:59.406Z</updated>
+  <updated>2022-09-29T08:52:03.471Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>线性神经网络</title>
-    <link href="http://ussofol.github.io/2022/09/28/linear-net/"/>
-    <id>http://ussofol.github.io/2022/09/28/linear-net/</id>
+    <title>softmax线性神经网络</title>
+    <link href="http://ussofol.github.io/2022/09/28/softmax-shi-xian/"/>
+    <id>http://ussofol.github.io/2022/09/28/softmax-shi-xian/</id>
     <published>2022-09-27T16:00:00.000Z</published>
-    <updated>2022-09-28T12:17:59.406Z</updated>
+    <updated>2022-09-29T08:52:03.471Z</updated>
     
     
       
@@ -45,11 +45,11 @@
   </entry>
   
   <entry>
-    <title>softmax线性神经网络</title>
-    <link href="http://ussofol.github.io/2022/09/28/softmax-shi-xian/"/>
-    <id>http://ussofol.github.io/2022/09/28/softmax-shi-xian/</id>
+    <title>线性神经网络</title>
+    <link href="http://ussofol.github.io/2022/09/28/linear-net/"/>
+    <id>http://ussofol.github.io/2022/09/28/linear-net/</id>
     <published>2022-09-27T16:00:00.000Z</published>
-    <updated>2022-09-29T07:12:59.738Z</updated>
+    <updated>2022-09-28T12:17:59.406Z</updated>
     
     
       
