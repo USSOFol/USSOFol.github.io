@@ -31,6 +31,33 @@
     
     
     <entry>
+      <title>softmax线性神经网络</title>
+      <link href="/2022/09/28/softmax-shi-xian/"/>
+      <url>/2022/09/28/softmax-shi-xian/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1数学原理"><a class="markdownIt-Anchor" href="#1数学原理"></a> 1.数学原理：</h3><h4 id="a线性模型"><a class="markdownIt-Anchor" href="#a线性模型"></a> a.线性模型</h4><h4 id="b损失函数"><a class="markdownIt-Anchor" href="#b损失函数"></a> b.损失函数</h4><h4 id="c"><a class="markdownIt-Anchor" href="#c"></a> c.</h4><h3 id="2实现步骤"><a class="markdownIt-Anchor" href="#2实现步骤"></a> 2.实现步骤</h3><h3 id="3原理实现与关键函数解析"><a class="markdownIt-Anchor" href="#3原理实现与关键函数解析"></a> 3.原理实现与关键函数解析</h3><h3 id="4调包实现"><a class="markdownIt-Anchor" href="#4调包实现"></a> 4.调包实现</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 深度学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 神经网络 </tag>
+            
+            <tag> 深度学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>线性分类</title>
       <link href="/2022/09/22/xian-xing-fen-lei/"/>
       <url>/2022/09/22/xian-xing-fen-lei/</url>
