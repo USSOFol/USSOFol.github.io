@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-09-29T08:52:03.471Z</updated>
+  <updated>2022-10-08T14:58:15.983Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -17,30 +17,80 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>softmax线性神经网络</title>
-    <link href="http://ussofol.github.io/2022/09/28/softmax-shi-xian/"/>
-    <id>http://ussofol.github.io/2022/09/28/softmax-shi-xian/</id>
-    <published>2022-09-27T16:00:00.000Z</published>
-    <updated>2022-09-29T08:52:03.471Z</updated>
+    <title>人熊</title>
+    <link href="http://ussofol.github.io/2022/10/08/ren-xiong/"/>
+    <id>http://ussofol.github.io/2022/10/08/ren-xiong/</id>
+    <published>2022-10-07T16:00:00.000Z</published>
+    <updated>2022-10-08T14:58:15.983Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
-&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;1&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1&quot;&gt;&lt;/a&gt;</summary>
         
       
     
     
     
-    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <category term="小说" scheme="http://ussofol.github.io/categories/%E5%B0%8F%E8%AF%B4/"/>
     
     
-    <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <category term="小说" scheme="http://ussofol.github.io/tags/%E5%B0%8F%E8%AF%B4/"/>
     
-    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+  </entry>
+  
+  <entry>
+    <title>BP神经网络原理</title>
+    <link href="http://ussofol.github.io/2022/10/05/bp-shen-jing-wang-luo-yuan-li/"/>
+    <id>http://ussofol.github.io/2022/10/05/bp-shen-jing-wang-luo-yuan-li/</id>
+    <published>2022-10-04T16:00:00.000Z</published>
+    <updated>2022-10-05T02:36:59.672Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1前向传播&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1前向传播&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="智能算法" scheme="http://ussofol.github.io/categories/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="BP网络" scheme="http://ussofol.github.io/tags/BP%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>非线性分类</title>
+    <link href="http://ussofol.github.io/2022/09/29/xian-xing-fen-lei-fu-ben/"/>
+    <id>http://ussofol.github.io/2022/09/29/xian-xing-fen-lei-fu-ben/</id>
+    <published>2022-09-28T16:00:00.000Z</published>
+    <updated>2022-09-29T10:44:38.154Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1非线性分类&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1非线性分类&quot;&gt;&lt;/a&gt; 1.非线性分类&lt;/h2&gt;
+&lt;h2 id=&quot;2约束优化问题问题&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="智能算法" scheme="http://ussofol.github.io/categories/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="智能算法" scheme="http://ussofol.github.io/tags/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="非线性分类" scheme="http://ussofol.github.io/tags/%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%88%86%E7%B1%BB/"/>
     
   </entry>
   
@@ -73,11 +123,39 @@
   </entry>
   
   <entry>
+    <title>softmax线性神经网络</title>
+    <link href="http://ussofol.github.io/2022/09/28/softmax-shi-xian/"/>
+    <id>http://ussofol.github.io/2022/09/28/softmax-shi-xian/</id>
+    <published>2022-09-27T16:00:00.000Z</published>
+    <updated>2022-09-29T08:52:03.471Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
+&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>线性分类</title>
     <link href="http://ussofol.github.io/2022/09/22/xian-xing-fen-lei/"/>
     <id>http://ussofol.github.io/2022/09/22/xian-xing-fen-lei/</id>
     <published>2022-09-21T16:00:00.000Z</published>
-    <updated>2022-09-27T13:48:41.178Z</updated>
+    <updated>2022-09-29T10:41:39.784Z</updated>
     
     
       
@@ -96,6 +174,35 @@
     <category term="智能算法" scheme="http://ussofol.github.io/tags/%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95/"/>
     
     <category term="线性分类" scheme="http://ussofol.github.io/tags/%E7%BA%BF%E6%80%A7%E5%88%86%E7%B1%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pytorch_nn的使用</title>
+    <link href="http://ussofol.github.io/2022/09/20/pytorch-nn-uesd/"/>
+    <id>http://ussofol.github.io/2022/09/20/pytorch-nn-uesd/</id>
+    <published>2022-09-19T16:00:00.000Z</published>
+    <updated>2022-09-30T11:23:08.850Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1函数库torchnn&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1函数库torchnn&quot;&gt;&lt;/a&gt; 1.函数库torch.nn&lt;/h2&gt;
+&lt;p&gt;torch库中最重要的东西&lt;/p&gt;
+&lt;h3 id=&quot;2parameter&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="pytorch" scheme="http://ussofol.github.io/tags/pytorch/"/>
     
   </entry>
   
@@ -130,7 +237,7 @@
     <link href="http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/"/>
     <id>http://ussofol.github.io/2022/09/20/yi-chuan-suan-fa/</id>
     <published>2022-09-19T16:00:00.000Z</published>
-    <updated>2022-09-20T07:42:55.602Z</updated>
+    <updated>2022-10-07T12:01:01.641Z</updated>
     
     
       
