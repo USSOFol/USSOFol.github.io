@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-10-08T16:27:04.539Z</updated>
+  <updated>2022-11-02T02:21:12.986Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -17,11 +17,159 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://ussofol.github.io/2022/11/02/chang-yong-gong-shi-fu-hao/"/>
+    <id>http://ussofol.github.io/2022/11/02/chang-yong-gong-shi-fu-hao/</id>
+    <published>2022-11-02T01:43:04.406Z</published>
+    <updated>2022-11-02T02:21:12.986Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;常用公式符号&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#常用公式符号&quot;&gt;&lt;/a&gt; 常用公式符号&lt;/h1&gt;
+&lt;h2 id=&quot;1括号&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1括号&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Typora公式符号</title>
+    <link href="http://ussofol.github.io/2022/11/02/gong-shi-fu-hao-bei-wang-lu/"/>
+    <id>http://ussofol.github.io/2022/11/02/gong-shi-fu-hao-bei-wang-lu/</id>
+    <published>2022-11-01T16:00:00.000Z</published>
+    <updated>2022-11-02T02:21:06.669Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;常用公式符号&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#常用公式符号&quot;&gt;&lt;/a&gt; 常用公式符号&lt;/h1&gt;
+&lt;h2 id=&quot;1括号&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1括号&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="typora" scheme="http://ussofol.github.io/categories/typora/"/>
+    
+    
+    <category term="typora" scheme="http://ussofol.github.io/tags/typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最优化的学习笔记</title>
+    <link href="http://ussofol.github.io/2022/10/31/zui-you-hua/"/>
+    <id>http://ussofol.github.io/2022/10/31/zui-you-hua/</id>
+    <published>2022-10-30T16:00:00.000Z</published>
+    <updated>2022-10-31T02:15:36.584Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1基础概念和理论基础&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1基础概念和理论基础&quot;&gt;&lt;/a&gt; 1.基础概念和理论基础&lt;/h1&gt;
+&lt;h2 id=&quot;1&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="最优化数学" scheme="http://ussofol.github.io/categories/%E6%9C%80%E4%BC%98%E5%8C%96%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="最优化" scheme="http://ussofol.github.io/tags/%E6%9C%80%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git使用教程</title>
+    <link href="http://ussofol.github.io/2022/10/30/git-shi-yong-jiao-cheng/"/>
+    <id>http://ussofol.github.io/2022/10/30/git-shi-yong-jiao-cheng/</id>
+    <published>2022-10-29T16:00:00.000Z</published>
+    <updated>2022-10-30T12:14:20.852Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1git工作流程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1git工作流程&quot;&gt;&lt;/a&gt; 1.git工作流程&lt;/h2&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="http://ussofol.github.io/categories/git/"/>
+    
+    
+    <category term="git" scheme="http://ussofol.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git和pycharm的联合使用</title>
+    <link href="http://ussofol.github.io/2022/10/30/pycharm-yu-git-de-lian-he-shi-yong/"/>
+    <id>http://ussofol.github.io/2022/10/30/pycharm-yu-git-de-lian-he-shi-yong/</id>
+    <published>2022-10-29T16:00:00.000Z</published>
+    <updated>2022-11-02T01:50:45.789Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1起因&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1起因&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="http://ussofol.github.io/categories/git/"/>
+    
+    
+    <category term="git" scheme="http://ussofol.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ussofol.github.io/2022/10/29/ru-he-zai-bu-tong-she-bei-shang-li-yong-github-guan-li-zi-ji-de-xiang-mu-yu-dai-ma/"/>
+    <id>http://ussofol.github.io/2022/10/29/ru-he-zai-bu-tong-she-bei-shang-li-yong-github-guan-li-zi-ji-de-xiang-mu-yu-dai-ma/</id>
+    <published>2022-10-29T08:27:44.414Z</published>
+    <updated>2022-10-29T09:18:29.536Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如何在不同设备上利用github管理自己的项目与代码&lt;/p&gt;
+&lt;p&gt;在‘help’里输入share进行搜索，会得到分享项目到github的选项&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>人熊</title>
     <link href="http://ussofol.github.io/2022/10/08/ren-xiong/"/>
     <id>http://ussofol.github.io/2022/10/08/ren-xiong/</id>
     <published>2022-10-07T16:00:00.000Z</published>
-    <updated>2022-10-08T16:27:04.539Z</updated>
+    <updated>2022-10-08T16:33:58.120Z</updated>
     
     
       
@@ -290,7 +438,7 @@
     <link href="http://ussofol.github.io/2022/04/15/shi-xian-dui-guang-ban-zhen-lie-de-huo-qu/"/>
     <id>http://ussofol.github.io/2022/04/15/shi-xian-dui-guang-ban-zhen-lie-de-huo-qu/</id>
     <published>2022-04-14T16:00:00.000Z</published>
-    <updated>2022-04-17T03:35:52.699Z</updated>
+    <updated>2022-10-29T08:59:09.449Z</updated>
     
     
       
