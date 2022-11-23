@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-11-02T02:27:30.878Z</updated>
+  <updated>2022-11-23T12:44:02.711Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -17,24 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://ussofol.github.io/2022/11/02/chang-yong-gong-shi-fu-hao/"/>
-    <id>http://ussofol.github.io/2022/11/02/chang-yong-gong-shi-fu-hao/</id>
-    <published>2022-11-02T01:43:04.406Z</published>
-    <updated>2022-11-02T02:27:30.878Z</updated>
+    <title>python类得学习</title>
+    <link href="http://ussofol.github.io/2022/11/23/python-lei-shi-yong/"/>
+    <id>http://ussofol.github.io/2022/11/23/python-lei-shi-yong/</id>
+    <published>2022-11-22T16:00:00.000Z</published>
+    <updated>2022-11-23T12:44:02.711Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;常用公式符号&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#常用公式符号&quot;&gt;&lt;/a&gt; 常用公式符号&lt;/h1&gt;
-&lt;h2 id=&quot;1括号&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1括号&quot;&gt;&lt;/a&gt;</summary>
+    <summary type="html">&lt;h2 id=&quot;1前言&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1前言&quot;&gt;&lt;/a&gt;</summary>
         
       
     
     
     
+    <category term="python" scheme="http://ussofol.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="http://ussofol.github.io/tags/python/"/>
     
   </entry>
   
@@ -169,7 +172,7 @@
     <link href="http://ussofol.github.io/2022/10/08/ren-xiong/"/>
     <id>http://ussofol.github.io/2022/10/08/ren-xiong/</id>
     <published>2022-10-07T16:00:00.000Z</published>
-    <updated>2022-10-08T16:33:58.120Z</updated>
+    <updated>2022-11-02T02:31:06.765Z</updated>
     
     
       
@@ -243,34 +246,6 @@
   </entry>
   
   <entry>
-    <title>线性神经网络</title>
-    <link href="http://ussofol.github.io/2022/09/28/linear-net/"/>
-    <id>http://ussofol.github.io/2022/09/28/linear-net/</id>
-    <published>2022-09-27T16:00:00.000Z</published>
-    <updated>2022-09-28T12:17:59.406Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
-&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>softmax线性神经网络</title>
     <link href="http://ussofol.github.io/2022/09/28/softmax-shi-xian/"/>
     <id>http://ussofol.github.io/2022/09/28/softmax-shi-xian/</id>
@@ -292,9 +267,37 @@
     <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
+    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
     <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     
+  </entry>
+  
+  <entry>
+    <title>线性神经网络</title>
+    <link href="http://ussofol.github.io/2022/09/28/linear-net/"/>
+    <id>http://ussofol.github.io/2022/09/28/linear-net/</id>
+    <published>2022-09-27T16:00:00.000Z</published>
+    <updated>2022-09-28T12:17:59.406Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
+&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
     <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
