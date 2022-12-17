@@ -6,7 +6,7 @@
   <link href="http://ussofol.github.io/atom.xml" rel="self"/>
   
   <link href="http://ussofol.github.io/"/>
-  <updated>2022-11-23T12:44:02.711Z</updated>
+  <updated>2022-11-23T14:22:14.288Z</updated>
   <id>http://ussofol.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://ussofol.github.io/2022/11/23/python-lei-shi-yong/"/>
     <id>http://ussofol.github.io/2022/11/23/python-lei-shi-yong/</id>
     <published>2022-11-22T16:00:00.000Z</published>
-    <updated>2022-11-23T12:44:02.711Z</updated>
+    <updated>2022-11-23T14:22:14.288Z</updated>
     
     
       
@@ -38,6 +38,31 @@
     
     
     <category term="python" scheme="http://ussofol.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>古埃及神话</title>
+    <link href="http://ussofol.github.io/2022/11/13/gu-ai-ji-shen-hua-gai-shu/"/>
+    <id>http://ussofol.github.io/2022/11/13/gu-ai-ji-shen-hua-gai-shu/</id>
+    <published>2022-11-12T16:00:00.000Z</published>
+    <updated>2022-12-17T11:06:45.076Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1神话简要版&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1神话简要版&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="神话" scheme="http://ussofol.github.io/categories/%E7%A5%9E%E8%AF%9D/"/>
+    
+    
+    <category term="神话" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E8%AF%9D/"/>
     
   </entry>
   
@@ -246,34 +271,6 @@
   </entry>
   
   <entry>
-    <title>softmax线性神经网络</title>
-    <link href="http://ussofol.github.io/2022/09/28/softmax-shi-xian/"/>
-    <id>http://ussofol.github.io/2022/09/28/softmax-shi-xian/</id>
-    <published>2022-09-27T16:00:00.000Z</published>
-    <updated>2022-09-29T08:52:03.471Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
-&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>线性神经网络</title>
     <link href="http://ussofol.github.io/2022/09/28/linear-net/"/>
     <id>http://ussofol.github.io/2022/09/28/linear-net/</id>
@@ -295,9 +292,37 @@
     <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
+    <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
     <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
+  </entry>
+  
+  <entry>
+    <title>softmax线性神经网络</title>
+    <link href="http://ussofol.github.io/2022/09/28/softmax-shi-xian/"/>
+    <id>http://ussofol.github.io/2022/09/28/softmax-shi-xian/</id>
+    <published>2022-09-27T16:00:00.000Z</published>
+    <updated>2022-09-29T08:52:03.471Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1数学原理&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1数学原理&quot;&gt;&lt;/a&gt; 1.数学原理：&lt;/h3&gt;
+&lt;h4 id=&quot;a线性模型&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#a线性模型&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
     <category term="神经网络" scheme="http://ussofol.github.io/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="深度学习" scheme="http://ussofol.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
