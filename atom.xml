@@ -119,31 +119,6 @@
   </entry>
   
   <entry>
-    <title>git和pycharm的联合使用</title>
-    <link href="http://ussofol.github.io/2022/10/30/pycharm-yu-git-de-lian-he-shi-yong/"/>
-    <id>http://ussofol.github.io/2022/10/30/pycharm-yu-git-de-lian-he-shi-yong/</id>
-    <published>2022-10-29T16:00:00.000Z</published>
-    <updated>2022-11-02T01:50:45.789Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;1起因&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1起因&quot;&gt;&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="git" scheme="http://ussofol.github.io/categories/git/"/>
-    
-    
-    <category term="git" scheme="http://ussofol.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>git使用教程</title>
     <link href="http://ussofol.github.io/2022/10/30/git-shi-yong-jiao-cheng/"/>
     <id>http://ussofol.github.io/2022/10/30/git-shi-yong-jiao-cheng/</id>
@@ -157,6 +132,31 @@
         
     <summary type="html">&lt;h2 id=&quot;1git工作流程&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1git工作流程&quot;&gt;&lt;/a&gt; 1.git工作流程&lt;/h2&gt;
 &lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="http://ussofol.github.io/categories/git/"/>
+    
+    
+    <category term="git" scheme="http://ussofol.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git和pycharm的联合使用</title>
+    <link href="http://ussofol.github.io/2022/10/30/pycharm-yu-git-de-lian-he-shi-yong/"/>
+    <id>http://ussofol.github.io/2022/10/30/pycharm-yu-git-de-lian-he-shi-yong/</id>
+    <published>2022-10-29T16:00:00.000Z</published>
+    <updated>2022-11-02T01:50:45.789Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1起因&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#1起因&quot;&gt;&lt;/a&gt;</summary>
         
       
     
